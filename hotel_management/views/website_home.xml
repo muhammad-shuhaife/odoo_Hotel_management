@@ -1,0 +1,483 @@
+<odoo>
+	<record id="menu_home_website" model="website.menu">
+		<field name="name">Home</field>
+		<field name="url">/</field>
+		<field name="parent_id" ref="website.main_menu" />
+		<field name="sequence">1</field>
+	</record>
+
+	<template id="home" name="Home">
+		<t name="Homepage" t-name="website.homepage1">
+			<t t-call="website.layout">
+				<t t-set="pageName" t-value="'homepage'" />
+				<div id="wrap" class="oe_structure oe_empty">
+					<p>
+					</p>
+					<section class="s_cover bg-black-50 o_colored_level s_parallax_no_overflow_hidden pt168 pb0 oe_img_bg" data-scroll-background-ratio="0" data-snippet="s_cover" data-name="Cover" style="background-position: 0% 57.6709%; background-image: url(&quot;/hotel_management/static/img/hotel_cover.jpeg&quot;);" data-original-id="947" data-original-src="/hotel_management/static/img/hotel_cover.jpeg" data-mimetype="image/jpeg" data-resize-width="1125">
+						<div class="s_allow_columns container-fluid">
+							<h1 style="text-align: center;">
+								<font style="color: rgb(244, 245, 245); font-size: 62px; font-weight: bold;">
+									JW MARRIOTT
+								</font>
+							</h1>
+							<p>
+								<br />
+							</p>
+							<p class="lead" style="text-align: center;">
+								<i>
+									&amp;nbsp;
+									<b>
+										<font style="" class="text-o-color-3">
+											Discover modern elegance at JW Marriott Hotel in Kerala,India.
+										</font>
+									</b>
+								</i>
+							</p>
+							<p class="lead" style="text-align: center;">
+								<i>
+									<b>
+										<font style="" class="text-o-color-3">
+											Enjoy your stay to the fullest extent.
+											<br />
+										</font>
+									</b>
+								</i>
+							</p>
+							<p class="lead" style="text-align: center;">
+								<i>
+									<b>
+										<br />
+									</b>
+								</i>
+							</p>
+							<p class="lead" style="text-align: center;">
+								<br />
+							</p>
+							<p class="lead" style="text-align: center;">
+								<br />
+							</p>
+						</div>
+					</section>
+					<section class="s_text_image pb32 o_colored_level pt96" data-snippet="s_image_text" data-name="Image - Text">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-6 o_colored_level pt0 pb0">
+									<img src="/hotel_management/static/img/hotel_sub.jpg" class="img img-fluid mx-auto" alt="" loading="lazy" style=" animation-play-state: paused; transition: none 0s ease 0s;-webkit-transform: translateX(-15.4%)  translateY(19.8%)  scaleX(1.12)  scaleY(1.54);-moz-transform: translateX(-15.4%)  translateY(19.8%)  scaleX(1.12)  scaleY(1.54);-ms-transform: translateX(-15.4%)  translateY(19.8%)  scaleX(1.12)  scaleY(1.54);-o-transform: translateX(-15.4%)  translateY(19.8%)  scaleX(1.12)  scaleY(1.54);transform: translateX(-15.4%)  translateY(19.8%)  scaleX(1.12)  scaleY(1.54)" data-original-title="" title="" aria-describedby="tooltip700072" data-original-id="955" data-original-src="/hotel_management/static/img/hotel_sub.jpg" data-mimetype="image/jpeg" data-resize-width="690" />
+								</div>
+								<div class="col-lg-6 o_colored_level pb16 pt16">
+									<h2>
+										<b>
+											JW Marriott Facilities
+										</b>
+									</h2>
+									<h2>
+										<b>
+											<br />
+										</b>
+									</h2>
+									<font style="font-size: 18px;">
+										JW Marriott provides a wide range of services to its guests. Whether visiting on a business trip or enjoying the city of Lakes for pleasure, we’re always working on new ways to better care for you. Our
+									</font>
+									<font style="font-size: 18px;">
+										budget we
+									</font>
+									<a href="https://www.indraniwas.com/homestay-in-udaipur/">
+										<font style="font-size: 18px;" data-original-title="" title="" aria-describedby="tooltip826533">
+											&amp;nbsp;
+										</font>
+									</a>
+									<font style="font-size: 18px;">
+										offers well-appointed AC guest rooms accommodation,SPA,Events, business &amp;amp; recreation facilities at very affordable price.
+										<br />
+										<br />
+									</font>
+									<p>
+										<a href="/room" class="mb-2 btn btn-primary">
+											Discover more
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="s_text_image pt32 pb32 o_colored_level o_half_screen_height" data-snippet="s_text_image" data-name="Text - Image" style="">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-6 pb16 o_colored_level pt80">
+									<h2>
+										<b>
+											<font style="font-size: 24px;">
+												<br />
+											</font>
+										</b>
+									</h2>
+									<h2>
+										<b>
+											<font style="font-size: 24px;">
+												<br />
+											</font>
+										</b>
+									</h2>
+									<h2>
+										<b>
+											<font style="font-size: 24px;">
+												&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+											</font>
+										</b>
+										&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+										<b>
+											<font style="font-size: 24px;">
+												JW Summer Offerce
+											</font>
+										</b>
+									</h2>
+									&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+									<font style="font-size: 18px;">
+										Member exclusive offer
+									</font>
+									<font style="font-size: 18px;">
+										<br />
+									</font>
+									<font style="font-size: 18px;">
+										<br />
+									</font>
+									&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+									<font style="font-size: 18px;">
+										Suit Surprise
+									</font>
+									<font style="font-size: 18px;">
+										s
+										<br />
+									</font>
+									<font style="font-size: 18px;">
+										<br />
+									</font>
+									&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+									<font style="font-size: 18px;">
+										4D Offer
+									</font>
+									<font style="font-size: 18px;">
+										<br />
+									</font>
+									<font style="font-size: 18px;">
+										<br />
+									</font>
+									&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+									<font style="font-size: 18px;">
+										Stay and Bit Longer
+									</font>
+									<font style="font-size: 18px;">
+										<br />
+									</font>
+									<font style="font-size: 18px;">
+										<br />
+									</font>
+									&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+									<font style="font-size: 18px;">
+										Innergise
+										<br />
+									</font>
+									<font style="font-size: 18px;">
+										<br />
+									</font>
+									<font style="font-size: 18px;">
+									</font>
+									<font style="font-size: 18px;">
+										<br />
+									</font>
+									<p>
+										&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp;
+										<a href="/contactus" class="mb-2 btn btn-primary" data-original-title="" title="" aria-describedby="tooltip125754">
+											Contact Us
+										</a>
+									</p>
+								</div>
+								<div class="col-lg-6 o_colored_level pt0 pb4">
+									<img src="/hotel_management/static/img/hotel_offer.jpeg" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip293978" style="" data-original-id="341" data-original-src="/hotel_management/static/img/hotel_offer.jpeg" data-mimetype="image/jpeg" data-quality="100" data-x="33.37969401947155" data-y="52.1557719054242" data-width="527.5340751043115" data-height="627.9554937413074" data-scale-x="1" data-scale-y="1" data-aspect-ratio="0/0" />
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="o_colored_level s_title pb0 pt48" data-vcss="001" data-snippet="s_title" data-name="Title">
+						<div class="container s_allow_columns">
+							<h2 class="hide-mobile t-title-s" id="cardcarousel_1222363_title_desktop" style="margin-left: 1.5em; text-align: center;">
+								Discover Our Newest Hotels
+							</h2>
+							<h2 class="hide-mobile t-title-s" id="cardcarousel_1222363_title_desktop" style="margin-left: 1.5em; text-align: center;">
+								<br />
+							</h2>
+							<p class="cd-cl__subheading col-12 col-lg-10 col-md-8 col-sm-8 t-font-s" style="text-align: justify;">
+								&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Planning a getaway? Explore our latest properties around the globe, from sun-warmed
+							</p>
+							<p class="cd-cl__subheading col-12 col-lg-10 col-md-8 col-sm-8 t-font-s" style="text-align: justify;">
+								&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; escapes to stylish city skyrises to intimate boutique retreats.
+							</p>
+							<p class="cd-cl__subheading col-12 col-lg-10 col-md-8 col-sm-8 t-font-s" style="text-align: justify;">
+								<br />
+							</p>
+							<h1 style="text-align: center;">
+							</h1>
+						</div>
+						&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+						<br />
+					</section>
+					<section class="s_picture bg-200 o_colored_level pb0 pt48 o_background_video" data-snippet="s_picture" data-name="Picture" style="position: relative;" data-bg-video-src="//www.youtube.com/embed/9Sa_bm0mt0Q?autoplay=1&amp;mute=1&amp;enablejsapi=1&amp;rel=0&amp;loop=1&amp;playlist=9Sa_bm0mt0Q&amp;controls=0&amp;fs=0&amp;modestbranding=1">
+						<div class="o_container_small">
+							<h2 style="text-align: center;">
+								<font style="font-size: 48px;" class="text-o-color-3">
+									JW Marriott
+									<br />
+								</font>
+							</h2>
+							<h1>
+								<font style="" class="text-o-color-3">
+									&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+								</font>
+								<font style="font-size: 24px;" class="text-o-color-3">
+									Be Present in Mind, Nourished in Body and Revitalized in Spirit.             &amp;nbsp;
+								</font>
+							</h1>
+							<div class="row s_nb_column_fixed">
+								<div class="col-lg-10 offset-lg-1 o_colored_level pb256" style="text-align: center;">
+									<figure class="figure">
+										<figcaption class="figure-caption text-muted py-3">
+											<font style="font-size: 24px;" class="text-o-color-3">
+												&amp;nbsp;
+											</font>
+										</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="s_three_columns bg-200 o_colored_level pb48 pt112" data-vcss="001" data-snippet="s_three_columns" data-name="Columns">
+						<div class="container">
+							<div class="row d-flex align-items-stretch">
+								<div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+									<div class="card bg-white h-100 rounded shadow" style="border-radius: 8px !important; box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 13px 15px !important;">
+										<img class="card-img-top" src="/hotel_management/static/img/hotel_beach.jpeg" alt="" loading="lazy" style="" data-original-title="" title="" aria-describedby="tooltip263323" data-original-id="959" data-original-src="/hotel_management/static/img/hotel_beach.jpeg" data-mimetype="image/jpeg" data-resize-width="690" />
+										<div class="card-body">
+											<h3 class="theme-card-title">
+												BEACH RETREATS
+											</h3>
+											<h3 class="card-title" />
+											<p class="card-text">
+												Wake up to the sound of waves lapping lazily at the shore. Uncover
+												serenity and marvel at the wealth of beauty within the glittering blue
+												seas. Give in to the siren song of the sun, sand and surf with Beach
+												Retreats.
+											</p>
+											<p class="card-text">
+												<br />
+											</p>
+											<p class="card-text">
+												<br />
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+									<div class="card bg-white h-100 shadow rounded" style="border-radius: 8px !important; box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 13px 15px !important;">
+										<img class="card-img-top" src="/hotel_management/static/img/hotel_hill.jpeg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip932705" style="" data-original-id="960" data-original-src="/hotel_management/static/img/hotel_hill.jpeg" data-mimetype="image/jpeg" data-resize-width="690" />
+										<div class="card-body">
+											<h3 class="theme-card-title">
+												HILL STATIONS
+											</h3>
+											<div class="theme-card-description">
+												<p>
+													Gaze
+													at the mist rolling in over the hill-tops from your luxurious villa.
+													Marvel at glorious sunsets that will take your breath away from a
+													private deck.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 s_col_no_bgcolor pb16 pt16">
+									<div class="card bg-white h-100 rounded shadow border" style="border-radius: 8px !important; border-style: double !important; border-width: 0px !important; box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 13px 15px !important;">
+										<img class="card-img-top" src="/hotel_management/static/img/hotel_urban.jpeg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip168017" style="" data-original-id="961" data-original-src="/hotel_management/static/img/hotel_urban.jpeg" data-mimetype="image/jpeg" data-resize-width="690" />
+										<div class="card-body">
+											<h3 class="theme-card-title">
+												URBAN GETAWAYS
+											</h3>
+											<div class="theme-card-description">
+												<p>
+													There
+													is magic to be found in the energy of a bustling city. Where vibrant
+													markets offer you everything you could imagine and centuries of history
+													hide in the most unassuming places. Discover the world’s most
+													spectacular urban hubs.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="s_showcase pt48 o_colored_level pb0" data-vcss="002" data-snippet="s_showcase" data-name="Showcase">
+						<div class="container">
+							<div class="row no-gutters s_col_no_resize s_col_no_bgcolor s_nb_column_fixed">
+								<div class="col-lg text-lg-right">
+									<div class="row">
+										<div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+											<div class="s_showcase_title d-flex flex-lg-row-reverse mb-2">
+												<i class="s_showcase_icon fa fa-2x fa-desktop text-secondary mr-3 mr-lg-0 ml-lg-3" />
+												<h3>
+													<b>
+														<font style="" class="text-o-color-2">
+															Television
+														</font>
+													</b>
+													<br />
+												</h3>
+											</div>
+											<p>
+												<font class="text-o-color-2" style="">
+													T
+												</font>
+												<font class="text-o-color-2" style="">
+													V with DTH Connection
+												</font>
+											</p>
+										</div>
+										<div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+											<div class="s_showcase_title d-flex flex-lg-row-reverse mb-2">
+												<i class="fa fa-2x fa-heart ml-lg-3 mr-3 mr-lg-0 s_showcase_icon text-o-color-2" data-original-title="" title="" aria-describedby="tooltip883014" style="" />
+												<h3>
+													<b>
+														<font class="text-o-color-2" style="">
+															24 Hour Support
+														</font>
+													</b>
+													<br />
+												</h3>
+											</div>
+											<p>
+												<font style="" class="text-600">
+													24 hr support is always with you
+												</font>
+												<br />
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-1">
+									<div class="w-50 h-100 border-right" />
+								</div>
+								<div class="col-lg">
+									<div class="row">
+										<div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+											<div class="s_showcase_title d-flex mb-2">
+												<i class="s_showcase_icon fa fa-2x text-secondary mr-3 fa-wifi" data-original-title="" title="" aria-describedby="tooltip450997" />
+												<h3>
+													<b>
+														<font class="text-o-color-2" style="">
+															WIFI
+														</font>
+													</b>
+													<br />
+												</h3>
+											</div>
+											<p>
+												<font class="text-600" style="">
+													Free Wi-fi Connectivity&amp;nbsp;
+												</font>
+											</p>
+										</div>
+										<div class="col-lg-12 pt24 o_colored_level pb0" data-name="Block">
+											<div class="s_showcase_title d-flex mb-2">
+												<i class="fa fa-2x fa-cube mr-3 s_showcase_icon text-o-color-2" style="" />
+												<h3>
+													<b>
+														<font class="text-o-color-2" style="">
+															Mini Refrigerator
+														</font>
+													</b>
+													<br />
+												</h3>
+											</div>
+											<p>
+												<font class="text-600" style="">
+													providing a mini refrigerator
+												</font>
+												<br />
+											</p>
+											<p>
+												<br />
+											</p>
+											<p>
+												<br />
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container text-lg-center">
+							<p>
+								<br />
+							</p>
+							<a href="/room" class="mb-2 btn btn-primary">
+								Discover all the features
+							</a>
+							<br />
+							<br />
+							<br />
+							<br />
+						</div>
+					</section>
+					<section class="s_numbers pt24 pb24 o_colored_level undefined o_cc o_cc1" data-snippet="s_numbers" data-name="Numbers" style="">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-3 text-center pt24 pb24 o_colored_level shadow" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 5px 0px !important;">
+									<span class="s_number display-4 o_default_snippet_text">
+										12
+									</span>
+									<h6>
+										<font style="color: rgb(20, 127, 123);">
+											Useful options
+										</font>
+									</h6>
+								</div>
+								<div class="col-lg-3 text-center pt24 pb24 o_colored_level shadow" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 5px 0px inset !important;">
+									<span class="s_number display-4 o_default_snippet_text">
+										45
+									</span>
+									<h6>
+										<font style="color: rgb(20, 127, 123);">
+											Beautiful snippets
+										</font>
+									</h6>
+								</div>
+								<div class="col-lg-3 text-center pt24 pb24 o_colored_level shadow" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 5px 0px !important;">
+									<span class="s_number display-4">
+										10
+									</span>
+									<h6>
+										<font style="color: rgb(20, 127, 123);">
+											Amazing pages
+										</font>
+									</h6>
+								</div>
+								<div class="col-lg-3 text-center pt24 pb24 o_colored_level shadow" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 5px 0px inset !important;">
+									<span class="s_number display-4">
+										37
+									</span>
+									<h6>
+										<font style="color: rgb(20, 127, 123);">
+											Outstanding images
+										</font>
+									</h6>
+								</div>
+							</div>
+						</div>
+					</section>
+					<p />
+					<p />
+				</div>
+			</t>
+		</t>
+	</template>
+</odoo>

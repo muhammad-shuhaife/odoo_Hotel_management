@@ -1,0 +1,526 @@
+<odoo>
+	<record id="menu_ourhotel_website" model="website.menu">
+		<field name="name">Our Hotel</field>
+		<field name="url">/ourhotel</field>
+		<field name="parent_id" ref="website.main_menu" />
+		<field name="sequence">2</field>
+	</record>
+	<template id="our_hotel" name="Our Hotel">
+		<t t-name="website.our-hotel">
+			<t t-call="website.layout">
+				<div id="wrap" class="oe_empty oe_structure">
+					<section class="s_cover bg-black-50 o_colored_level s_parallax_no_overflow_hidden pt88 pb232 oe_img_bg" data-scroll-background-ratio="0" data-snippet="s_cover" data-name="Cover" style="background-position: 0% 76.1061%; background-image: url(&quot;/hotel_management/static/img/our_hotel_cover.jpeg&quot;);" data-original-id="435" data-original-src="/hotel_management/static/img/our_hotel_cover.jpeg" data-mimetype="image/jpeg" data-resize-width="1125">
+						<div class="s_allow_columns container">
+							<h1 style="text-align: center;">
+								<font style="color: rgb(244, 245, 245); font-size: 62px; font-weight: bold;">
+									JW MARRIOTT
+								</font>
+							</h1>
+							<p>
+								<br />
+							</p>
+							<p class="lead" style="text-align: center;">
+								&amp;nbsp;
+								<b>
+									<font style="" class="text-o-color-3">
+										Discover modern elegance at JW Marriott Hotel in Kerala,India.
+									</font>
+								</b>
+							</p>
+							<p class="lead" style="text-align: center;">
+								<b>
+									<font style="" class="text-o-color-3">
+										Enjoy your stay to the fullest extent.
+										<br />
+									</font>
+								</b>
+							</p>
+							<b>
+							</b>
+						</div>
+					</section>
+					<section class="s_text_block pt32 o_colored_level pb0" data-snippet="s_text_block" data-name="Text">
+						<div class="container s_allow_columns">
+							<section class="s_text_block o_colored_level pb40 pt0" data-snippet="s_text_block" data-name="Text">
+								<div class="container s_allow_columns">
+									<div style="text-align: center;">
+										<font style="font-size: 24px;">
+											A WORLD-FAMOUS IRISH WELCOME
+											<br />
+										</font>
+										<br />
+										Proudly owned by Red Carnation Hotels, the extraordinary characters of the Castle passionately care&amp;nbsp;
+										<br />
+										about each and every&amp;nbsp;&amp;nbsp; guest,while&amp;nbsp;&amp;nbsp;spectacular surroundings, exquisite interiors, delicious cuisine, and unique local
+										<br />
+										partnerships bring this cornerof Ireland to life in the most beautiful way.We are proud to be recognised with manyawards
+										<br />
+										that pay testament to ourremarkable team and their tireless efforts to create unforgettable experiences. JWmarriott
+										<br />
+										has a rich history, including being the location for the filming of John Ford's, 'The Quiet Man'.
+									</div>
+								</div>
+							</section>
+						</div>
+					</section>
+					<section class="s_picture o_colored_level undefined o_cc o_cc1 pb64 pt0" data-snippet="s_picture" data-name="Picture">
+						<div class="container">
+							<h2 style="text-align: center;">
+								<font style="font-size: 36px;">
+									Heart of The Hotel
+								</font>
+							</h2>
+							<h2 style="text-align: center;">
+								<font style="font-size: 36px;">
+									<br />
+								</font>
+							</h2>
+							<p style="text-align: center;">
+								Hall is the heart of the hotel where the guests relax and stay, admiring a new
+							</p>
+							<p style="text-align: center;">
+								exhibition or just the antique trades. They can also wait for the check-in, read a
+							</p>
+							<p style="text-align: center;">
+								newspaper or sip a tasty cocktail at ORVM bar.
+								<br />
+							</p>
+							<p style="text-align: center;">
+								<br />
+							</p>
+							<div class="row s_nb_column_fixed">
+								<div class="col-lg-10 offset-lg-1 pb24 o_colored_level shadow" style="text-align: center; box-shadow: rgb(22, 24, 27) 0px 1px 25px 0px !important;">
+									<figure class="figure">
+										<img src="/hotel_management/static/img/sofa3.jpeg" class="figure-img img-thumbnail padding-large" alt="" loading="lazy" data-original-id="724" data-original-src="/hotel_management/static/img/sofa3.jpeg" data-mimetype="image/jpeg" data-resize-width="920" data-original-title="" title="" aria-describedby="tooltip274257" style="" />
+										<figcaption class="figure-caption text-muted py-3">
+											<b>
+												<i>
+													<font style="" class="text-o-color-5">
+														The Living Romm has a new decor born from a stylish research by Artestudio
+													</font>
+												</i>
+											</b>
+											<font style="" class="text-o-color-5">
+												&amp;nbsp;
+											</font>
+										</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="s_text_image pt32 pb32 o_colored_level oe_img_bg" data-snippet="s_image_text" data-name="Image - Text" style="background-position: 0% 0.195453%; background-image: url(&quot;/hotel_management/static/img/dark_brown_wall.jpeg&quot;);" data-original-id="715" data-original-src="/hotel_management/static/img/dark_brown_wall.jpeg" data-mimetype="image/jpeg" data-resize-width="1920" data-quality="100">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-6 pt16 pb16 o_colored_level">
+									<img src="/hotel_management/static/img/dining2.jpeg" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="711" data-original-src="/hotel_management/static/img/dining2.jpeg" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip681164" data-width="1788.4444444444443" data-height="1425.7777777777778" data-scale-x="1" data-scale-y="1" data-aspect-ratio="0/0" style="transform: translateX(-18.5%) translateY(0.5%) scaleX(1.12) scaleY(1.02); animation-play-state: paused; transition: none 0s ease 0s;" />
+								</div>
+								<div class="col-lg-6 pt16 pb16 o_colored_level">
+									<font style="font-size: 36px;" class="text-o-color-3">
+										<b>
+											Restaurant Doney
+										</b>
+									</font>
+									<br />
+									<br />
+									<br />
+									<b>
+										<i>
+											<font style="" class="text-o-color-3">
+												The
+												Restaurant Doney is a natural side walk on via veneto and it has a new
+												decor born from a stylish research by Artestudio and Baxter as fro the
+												connected cafe doney, the nearby lounge&amp;nbsp; bar, gathering place of the
+											</font>
+											<font style="" class="text-o-color-3">
+												roman life
+											</font>
+											<font style="" class="text-o-color-3">
+												<br />
+											</font>
+										</i>
+									</b>
+									<b>
+										<i>
+											<font style="" class="text-o-color-3">
+												<br />
+											</font>
+										</i>
+									</b>
+									<b>
+										<i>
+											<font style="" class="text-o-color-3">
+												<br />
+											</font>
+										</i>
+									</b>
+									<b>
+										<i>
+											<font style="" class="text-o-color-3">
+												<br />
+											</font>
+											<font style="" class="text-o-color-3">
+											</font>
+										</i>
+									</b>
+									<p>
+										<a href="/room" class="mb-2 btn btn-primary">
+											Discover more
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_text_image" data-name="Text - Image">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-6 pt16 pb16 o_colored_level">
+									<h3 class="t-title-s pb-3">
+										Upscale Mediterranean Dining
+									</h3>
+									<p class="content-tile-body t-font-m " data-threshold="400" data-ellipsis-type="seemore" data-seemore-text="See More" data-seeless-text="See Less">
+										Having
+										long been a part of the upscale Via Veneto restaurant scene, Restaurant
+										Doney has been remodeled using pale marble floors, stone walls and
+										light wood finishes that reflect the exquisite Mediterranean flavors
+										offered on the menu.
+									</p>
+									<p>
+										<a href="/room" class="btn btn-primary mb-2 o_default_snippet_text">
+											Learn more
+										</a>
+									</p>
+								</div>
+								<div class="col-lg-6 pt16 pb16 o_colored_level shadow" style="box-shadow: rgba(0, 0, 0, 0.15) 10px 10px 12px 0px !important;">
+									<img src="/hotel_management/static/img/dining.jpg" class="img img-fluid mx-auto shadow" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip888863" data-original-id="730" data-original-src="/hotel_management/static/img/dining.jpg" data-mimetype="image/jpeg" data-resize-width="690" style="" />
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="s_text_block o_colored_level pt72 pb0" data-snippet="s_text_block" data-name="Text">
+						<div class="container s_allow_columns">
+							<h3 class="marriott-horizontal-carousel__container-title t-title-s pb-2 pb-xl-3" style="text-align: center;">
+								<b>
+									Special Events at The Westin Excelsior, Rome
+								</b>
+							</h3>
+							<p class="marriott-horizontal-carousel__container-description t-font-m mb-4" data-threshold="400" data-ellipsis-type="seemore" data-seemore-text="See More" data-seeless-text="See Less" style="text-align: center;">
+								The Westin Excelsior is a magnificent backdrop for important business and social events: press conferences,
+								<br />
+								conventions, private meetings, wedding banquets and receptions.
+								<br />
+							</p>
+							<div style="text-align: left;">
+								&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+								<a class="d-inline-flex align-items-center m-button m-button-primary marriott-horizontal-carousel__container-cta custom_click_track" href="/contactus" target="_self">
+									Discover all the features
+								</a>
+							</div>
+						</div>
+					</section>
+					<section class="s_image_gallery s_image_gallery_show_indicators s_image_gallery_indicators_rounded pt24 o_colored_level o_slideshow" data-vcss="001" data-columns="3" style="overflow: hidden; height: 678px;" data-snippet="s_image_gallery" data-name="Image Gallery">
+						<div class="container">
+							<div id="slideshow_1686652881415" class="carousel slide" data-ride="carousel" data-interval="0" style="margin: 0 12px;">
+								<div class="carousel-inner" style="padding: 0;">
+									<div class="carousel-item active" style="">
+										<img class="img img-fluid d-block" src="/hotel_management/static/img/event3.jpeg" style="" alt="" data-name="Image" data-index="0" loading="lazy" />
+									</div>
+									<div class="carousel-item undefined" style="">
+										<img class="img img-fluid d-block " src="/hotel_management/static/img/event1.jpeg" style="" alt="" data-name="Image" data-index="1" loading="lazy" />
+									</div>
+									<div class="carousel-item undefined" style="">
+										<img class="img img-fluid d-block " src="/hotel_management/static/img/enent.jpeg" style="" alt="" data-name="Image" data-index="2" loading="lazy" />
+									</div>
+								</div>
+								<ul class="carousel-indicators">
+									<li data-target="#slideshow_1686652881415" data-slide-to="0" class="active" style="background-image: url(/hotel_management/static/img/event3.jpeg)" />
+									<li data-target="#slideshow_1686652881415" data-slide-to="1" style="background-image: url(/hotel_management/static/img/event1.jpeg)" />
+									<li data-target="#slideshow_1686652881415" data-slide-to="2" style="background-image: url(/hotel_management/static/img/enent.jpeg)" />
+								</ul>
+								<a class="carousel-control-prev o_we_no_overlay" href="#slideshow_1686652881415" data-slide="prev" aria-label="Previous" title="Previous">
+									<span class="fa fa-chevron-left fa-2x text-white" />
+									<span class="sr-only">
+										Previous
+									</span>
+								</a>
+								<a class="carousel-control-next o_we_no_overlay" href="#slideshow_1686652881415" data-slide="next" aria-label="Next" title="Next">
+									<span class="fa fa-chevron-right fa-2x text-white" />
+									<span class="sr-only">
+										Next
+									</span>
+								</a>
+							</div>
+						</div>
+					</section>
+					<section class="s_text_block pb32 o_colored_level pt88 oe_img_bg" data-snippet="s_text_block" data-name="Text" style="background-image: url(&quot;/hotel_management/static/img/blue_walll.jpeg&quot;);" data-original-id="953" data-original-src="/hotel_management/static/img/blue_walll.jpeg" data-mimetype="image/jpeg" data-resize-width="1280">
+						<div class="container s_allow_columns" style="text-align: center;">
+							<div class="ast-inside-advanced-header-content">
+								<div class="ast-advanced-headers-layout ast-advanced-headers-layout-2">
+									<div class="ast-container ast-title-bar-align-center">
+										<div class="ast-advanced-headers-wrap">
+											<h1 class="ast-advanced-headers-title">
+												&amp;nbsp;
+												<font style="font-size: 36px;">
+													Dine
+												</font>
+											</h1>
+											<div class="taxonomy-description">
+												<p>
+													A selection of luxurious international places to dine by Luxury Columnist, a luxury lifestyle magazine.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="s_masonry_block o_colored_level oe_img_bg" data-vcss="001" data-snippet="s_masonry_block" data-name="Masonry" style="background-image: url(&quot;/hotel_management/static/img/food.jpeg&quot;);" data-original-id="570" data-original-src="/hotel_management/static/imgfood.jpeg" data-mimetype="image/jpeg" data-resize-width="1260" data-quality="100">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-lg-6 text-center pb224 pt224 o_colored_level border oe_img_bg" data-name="Block" style="border-width: 20px !important; background-image: url(&quot;/hotel_management/static/img/food.jpeg&quot;);" data-original-id="570" data-original-src="/hotel_management/static/img/food.jpeg" data-mimetype="image/jpeg" data-resize-width="1260" data-quality="99">
+									<p>
+										<br />
+									</p>
+								</div>
+								<div class="col-lg-6 o_colored_level border oe_img_bg" style="border-width: 5px !important; background-image: url(&quot;/hotel_management/static/img/hotel_food.jpeg&quot;);" data-original-id="563" data-original-src="/hotel_management/static/img/hotel_food.jpeg" data-mimetype="image/jpeg" data-resize-width="1125">
+									<div class="row h-100">
+										<div class="col-lg-6 pt24 pb8 text-center o_cc o_cc3 o_colored_level border oe_img_bg" data-name="Block" style="border-width: 5px !important; background-image: url(&quot;/hotel_management/static/img/hotel_food.jpeg&quot;);" data-original-id="563" data-original-src="/hotel_management/static/img/hotel_food.jpeg" data-mimetype="image/jpeg" data-resize-width="1125">
+											<h3>
+												&amp;nbsp;
+											</h3>
+											<p>
+												&amp;nbsp;
+											</p>
+										</div>
+										<div class="col-lg-6 pt24 pb8 text-center bg-200 o_colored_level oe_img_bg border" data-name="Block" style="background-image: url(&quot;/hotel_management/static/img/fppd3.jpeg&quot;); border-width: 5px !important;" data-original-id="577" data-original-src="/hotel_management/static/img/fppd3.jpeg" data-mimetype="image/jpeg" data-resize-width="1125">
+											<h3>
+												<br />
+											</h3>
+											<p>
+												And a great subtitle
+											</p>
+										</div>
+										<div class="col-lg-6 pt24 pb8 text-center bg-200 o_colored_level border oe_img_bg" data-name="Block" style="background-position: 13.4078% 0%; border-width: 5px !important; background-image: url(&quot;/hotel_management/static/img/food4.jpeg&quot;);" data-original-id="589" data-original-src="/hotel_management/static/img/food4.jpeg" data-mimetype="image/jpeg" data-resize-width="1920">
+											<h3>
+												<br />
+											</h3>
+										</div>
+										<div class="col-lg-6 pt24 pb8 text-center o_cc o_cc4 o_colored_level oe_img_bg border" data-name="Block" style="background-image: url(&quot;/hotel_management/static/img/food2.jpeg&quot;); border-width: 5px !important;" data-original-id="592" data-original-src="/hotel_management/static/img/food2.jpeg" data-mimetype="image/jpeg" data-resize-width="1125">
+											<h3>
+												<br />
+											</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="s_showcase pt48 pb48 o_colored_level" data-vcss="002" data-snippet="s_showcase" data-name="Showcase">
+						<div class="container">
+							<div class="row no-gutters s_col_no_resize s_col_no_bgcolor s_nb_column_fixed">
+								<div class="col-lg text-lg-right">
+									<div class="row">
+										<div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+											<div class="s_showcase_title d-flex flex-lg-row-reverse mb-2">
+												<i class="s_showcase_icon fa fa-2x fa-desktop text-secondary mr-3 mr-lg-0 ml-lg-3" />
+												<h3>
+													<b>
+														<font style="" class="text-o-color-2">
+															Television
+														</font>
+													</b>
+													<br />
+												</h3>
+												<h3 />
+											</div>
+											<p>
+												<font class="text-o-color-2" style="">
+													T
+												</font>
+												<font class="text-o-color-2" style="">
+													V with DTH Connection
+												</font>
+											</p>
+										</div>
+										<div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+											<div class="s_showcase_title d-flex flex-lg-row-reverse mb-2">
+												<i class="s_showcase_icon fa fa-2x fa-paint-brush text-secondary mr-3 mr-lg-0 ml-lg-3" />
+												<h3>
+													<b>
+														<font class="text-o-color-2" style="">
+															24 Hour Support
+														</font>
+													</b>
+												</h3>
+												<h3 class="o_default_snippet_text" />
+											</div>
+											<p>
+												<font style="" class="text-600">
+													24 hr support is always with you
+												</font>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-1">
+									<div class="w-50 h-100 border-right" />
+								</div>
+								<div class="col-lg">
+									<div class="row">
+										<div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+											<div class="s_showcase_title d-flex mb-2">
+												<i class="s_showcase_icon fa fa-2x fa-heart text-secondary mr-3" />
+												<h3>
+													<b>
+														<font class="text-o-color-2" style="">
+															WIFI
+														</font>
+													</b>
+												</h3>
+												<h3 class="o_default_snippet_text" />
+											</div>
+											<p>
+												<font class="text-600" style="">
+													Free Wi-fi Connectivity
+													<br />
+												</font>
+											</p>
+										</div>
+										<div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+											<div class="s_showcase_title d-flex mb-2">
+												<i class="s_showcase_icon fa fa-2x fa-gift text-secondary mr-3" />
+												<h3>
+													<b>
+														<font class="text-o-color-2" style="">
+															Mini Refrigerator
+														</font>
+													</b>
+												</h3>
+												<h3 />
+											</div>
+											<p>
+												<font class="text-600" style="">
+													providing a mini refrigerator
+												</font>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container text-lg-center">
+							<p>
+							</p>
+							<h3>
+								<b>
+									<font style="" class="text-o-color-2">
+										<br />
+									</font>
+								</b>
+							</h3>
+							<p>
+							</p>
+							<a href="/contactus" class="btn btn-primary mb-2 o_default_snippet_text">
+								Discover all the features
+							</a>
+						</div>
+					</section>
+					<div class="s_popup o_snippet_invisible" data-vcss="001" data-snippet="s_popup" data-name="Popup" id="sPopup1686653792308" data-invisible="1">
+						<div class="modal fade s_popup_middle modal_shown" style="background-color: var(--black-50)  !important; display: none;" data-show-after="5000" data-display="afterDelay" data-consents-duration="7" data-focus="false" data-backdrop="false" tabindex="-1" role="dialog" aria-hidden="true">
+							<div class="modal-dialog d-flex">
+								<div class="modal-content oe_structure">
+									<div class="s_popup_close js_close_popup o_we_no_overlay o_not_editable" aria-label="Close">
+										×
+									</div>
+									<section class="s_banner pt96 pb96 oe_img_bg o_colored_level" data-snippet="s_banner" style="background-image: url(&quot;/web/image/website.s_popup_default_image&quot;);">
+										<div class="container">
+											<div class="row s_nb_column_fixed">
+												<div class="col-lg-10 offset-lg-1 text-center o_cc o_cc1 jumbotron pt48 pb48 o_colored_level">
+													<h2>
+														<font style="font-size: 62px;" class="o_default_snippet_text">
+															Win $20
+														</font>
+													</h2>
+													<p class="lead o_default_snippet_text">
+														Check out now and get $20 off your first order.
+													</p>
+													<a href="#" class="btn btn-primary mb-2 o_default_snippet_text">
+														New customer
+													</a>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<section class="s_text_block o_colored_level pb0 pt0" data-snippet="s_text_block" data-name="Text">
+						<div class="container s_allow_columns">
+							<h3>
+								<b>
+									<font style="" class="text-o-color-2">
+										<br />
+									</font>
+								</b>
+							</h3>
+							<div class="container text-lg-center">
+								<p>
+									<br />
+								</p>
+							</div>
+							<section class="s_numbers pt24 pb24 o_colored_level undefined o_cc o_cc1" data-snippet="s_numbers" data-name="Numbers" style="">
+								<div class="container">
+									<div class="row">
+										<div class="col-lg-3 text-center pt24 pb24 o_colored_level shadow" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 5px 0px !important;">
+											<span class="s_number display-4 o_default_snippet_text">
+												12
+											</span>
+											<h6>
+												<font style="color: rgb(20, 127, 123);">
+													Useful options
+												</font>
+											</h6>
+										</div>
+										<div class="col-lg-3 text-center pt24 pb24 o_colored_level shadow" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 5px 0px inset !important;">
+											<span class="s_number display-4 o_default_snippet_text">
+												45
+											</span>
+											<h6>
+												<font style="color: rgb(20, 127, 123);">
+													Beautiful snippets
+												</font>
+											</h6>
+										</div>
+										<div class="col-lg-3 text-center pt24 pb24 o_colored_level shadow" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 5px 0px !important;">
+											<span class="s_number display-4">
+												10
+											</span>
+											<h6>
+												<font style="color: rgb(20, 127, 123);">
+													Amazing pages
+												</font>
+											</h6>
+										</div>
+										<div class="col-lg-3 text-center pt24 pb24 o_colored_level shadow" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 5px 0px inset !important;">
+											<span class="s_number display-4">
+												37
+											</span>
+											<h6>
+												<font style="color: rgb(20, 127, 123);">
+													Outstanding images
+												</font>
+											</h6>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</section>
+				</div>
+			</t>
+		</t>
+	</template>
+</odoo>

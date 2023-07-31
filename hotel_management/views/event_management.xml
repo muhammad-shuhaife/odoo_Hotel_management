@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+
+<!-- START of Action ==================================================================================================================== -->
+
+    <record id="hotel_management.event_management_action" model="ir.actions.act_window">
+      <field name="name">Event Management</field>
+      <field name="res_model">hotel_management.event_m</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+                    Create a new Event Type
+        </p>
+      </field>
+    </record>
+
+<!-- END of Action ==================================================================================================================== -->
+  
+<!-- START Tree View ==================================================================================================================== -->
+
+    <record id="event_m_tree" model="ir.ui.view">
+      <field name="name">hotel_management.event_m.tree</field>
+      <field name="model">hotel_management.event_m</field>
+      <field name="arch" type="xml">
+        <tree string="Event Type">
+
+          <field name="venue"/>
+          <field name="attendees"/>
+          <field name="description"/>
+          <field name="staff_id"/>
+          <field name="contact"/>
+          <field name="price"/>
+
+        </tree>
+      </field>
+    </record>
+
+<!-- END of Tree View ==================================================================================================================== -->
+
+<!-- START Form View ==================================================================================================================== -->
+
+    <record id="event_m_form" model="ir.ui.view">
+      <field name="name">hotel_management.event_m.form</field>
+      <field name="model">hotel_management.event_m</field>
+      <field name="arch" type="xml">
+        <form string="Event">
+          <sheet>
+          <group>
+              <field name="venue"/>
+              <field name="attendees"/>
+              <field name="description"/>
+              <field name="staff_id"/>
+              <field name="contact"/>
+              <field name="price"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+<!-- END Form View ==================================================================================================================== -->
+
+<!-- START Search View ==================================================================================================================== -->
+
+    <record id="event_m_search" model="ir.ui.view">
+      <field name="name">hotel_management.event_m.search</field>
+      <field name="model">hotel_management.event_m</field>
+      <field name="arch" type="xml">
+        <search string="Event Type">
+
+              <field name="venue"/>
+              <field name="attendees"/>
+              <field name="description"/>
+              <field name="staff_id"/>
+              <field name="contact"/>
+              <field name="price"/>
+        </search>
+      </field>
+    </record>
+
+<!-- END Search View ==================================================================================================================== -->
+
+  </data>
+</odoo>

@@ -1,0 +1,107 @@
+<odoo>
+	<template id="hotel_assets_frontend" name="Hotel_Patient_Frontend" inherit_id="web.assets_frontend">
+		<xpath expr="." position="inside">
+			<link rel="stylesheet" type="text/css" href="hotel_management/static/src/css/login.css" />
+		</xpath>
+	</template>
+	<template id="booking_room" name="Booking room">
+		<field name="url">booking</field>
+		<t t-call="website.layout">
+			<div id="wrap">
+				<div class="oe_structure">
+					<div class="container3">
+						<form role="form2" action="/bookingroom" method="POST">
+
+						<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+							<div class="image-header" style="vertical-align:top;display:flex;margin-bottom:50px;margin-top:25px">
+							<img class="image-top" src="/hotel_management/static/img/hotel_beach.jpeg" height="100px" width="30%" style="display:flex;margin-right:40px;border:4px solid white"/>
+							<img class="image-top" src="/hotel_management/static/img/hotel_sub.jpg" height="100px" width="30%" style="display:flex;margin-right:40px;border:4px solid white"/>
+							<img class="image-top" src="/hotel_management/static/img/hotel_urban.jpeg" height="100px" width="30%" style="display:flex;border:4px solid white"/>
+							</div>
+
+							
+							<div clas="form-group1">
+								<label for="cust_id" class="control-label">Name</label>
+								<select name="cust_id" class="form-control link-style">
+									<t t-foreach="cust_rec" t-as="customer">
+										<option />
+										<option t-esc="customer.name" t-att-value="customer.id" />
+									</t>
+								</select>
+							</div>
+
+							<div clas="form-group1">
+								<label for="room_type_id" class="control-label">Room Type</label>																	
+								<select name="room_type_id" class="form-control link-style">
+									<t t-foreach="room_rec" t-as="room">
+										<option />
+										<option t-esc="room.name" t-att-value="room.id" />
+									</t>
+								</select>
+							</div>
+							<div clas="form-group1">
+								<label for="amenities_ids" class="control-label">Amenities</label>
+								<select name="amenities_ids" class="form-control link-style">
+									<t t-foreach="amenities_rec" t-as="amenities">
+										<option />
+										<option t-esc="amenities.name" t-att-value="amenities.id" />
+									</t>
+								</select>
+							</div>
+							<div clas="form-group1">
+								<label for="payment_type" class="control-label">Payment Type</label>																	
+								<select name="payment_type" class="form-control link-style">
+									<option />
+									<option value="advance1">Advance Payment (10%)</option>
+									<option value="advance">Advance Payment (50%)</option>
+									<option value="full">Full Payment</option>
+								</select>
+							</div>
+							<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+							
+							<div class="form-group1">
+								<label for="date1" class="control-label">Check IN</label>
+								<br />
+								<input type="date" name="check_in" t-att-value="check_in" id="check_in" placeholder="" required="required" />
+							</div>
+							<div class="form-group1">
+								<label for="date2" class="control-label">Check Out</label>																
+								<br />
+								<input type="date" name="check_out" t-att-value="check_out" id="check_out" placeholder="" required="required" />
+							</div>
+
+							<div class="clearfix oe_login_buttons">
+								<center><button type="submit" class="checknow-btn">Book Now</button></center>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</t>
+		
+	</template>
+	<record id="booking_thanks" model="website.page">
+		<field name="name">Thanks</field>
+		<field name="type">qweb</field>
+		<field name="url">booking-thank-you</field>
+		<field name="website_published">True</field>
+		<field name="key">hotel_management.booking_thanks</field>
+		<field name="arch" type="xml">
+			<t name="thanks" t-name="   ">
+				<t t-call="website.layout">
+					<div id="wrap">
+						<div class="container">
+							<h1>Thanks</h1>
+							<div class="row">
+								<div class="col-lg-8">
+									<div class="alert alert-success" role="status">You Booked successfully</div>
+									<p>we will contact you soon</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</t>
+			</t>
+		</field>
+	</record>
+</odoo>

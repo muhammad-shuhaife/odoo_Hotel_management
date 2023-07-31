@@ -1,0 +1,70 @@
+<odoo>
+    <data>
+    
+<!-- START of Action ==================================================================================================================== -->
+
+        <record id = "spa_management_action" model = "ir.actions.act_window">
+            <field name = "name"> Spa Management</field>
+            <field name = "res_model">hotel_management.spa_m</field>
+            <field name = "view_mode">tree,form</field>
+        </record>
+
+<!-- END of Action ==================================================================================================================== -->
+
+<!-- START Tree View ==================================================================================================================== -->
+
+        <record id = "spa_management_tree" model = "ir.ui.view">
+            <field name = "name">hotel_management.spa_m.tree</field>
+            <field name = "model">hotel_management.spa_m</field>
+            <field name = "arch" type = "xml">
+                <tree string = "Spa Management">
+                    <field name = "id" />
+                    <field name = "name"/>
+                    <field name = "spa_m_description"/>
+                    <field name = "price"/>
+                </tree>
+            </field>
+        </record>
+
+<!-- END of Tree View ==================================================================================================================== -->
+
+<!-- START Form View ==================================================================================================================== -->
+
+        <record id = "spa_management_form" model = "ir.ui.view">
+            <field name = "name">hotel_management.spa_m.form</field>
+            <field name = "model">hotel_management.spa_m</field>
+            <field name = "arch" type = "xml">
+                <form string = "Spa Management">
+                    <sheet>
+                        <group string="Spa Details">
+                            <field name = "name"/>
+                            <field name = "spa_m_description"/> 
+                            <field name = "price"/>
+                        </group>
+                    </sheet>
+                </form>    
+            </field>    
+        </record>
+
+<!-- END Form View ==================================================================================================================== -->
+
+<!-- START Search View ==================================================================================================================== -->
+
+        <record id = "spa_management_search" model = "ir.ui.view">
+            <field name = "name">hotel_management.spa_m.search</field>
+            <field name = "model">hotel_management.spa_m</field>
+            <field name = "arch" type = "xml">
+                <search string = "Spa Management">
+                    <field name="id" />
+                    <field name = "name"/>
+                    <field name = "spa_m_description"/>
+                    <!-- <field name = "spam_schedule"/> -->
+                    <field name = "price"/>
+                </search>
+            </field>
+        </record>
+
+<!-- END Search View ==================================================================================================================== -->
+
+    </data>
+</odoo>

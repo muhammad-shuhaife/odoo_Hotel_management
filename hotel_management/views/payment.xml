@@ -1,0 +1,132 @@
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="payment_action">
+            <field name="name">Hotel payment</field>
+            <field name="res_model">account.move</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+         <record model="ir.ui.view" id="view_move_tree_inherit">
+            <field name="name">account.move.tree.custom</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_invoice_tree" />
+            <field name="arch" type="xml">
+
+
+                    <xpath expr="//field[@name='name']" position="after">
+                        <field name="paymentdate" />
+                        <field name="cust_id" />
+                        <field name="email" />
+                        <field name="contact" />
+                        <field name="gender" />
+                        <field name="address" />
+                        <field name="checkin" />
+                        <field name="checkout" />
+                        <field name="total_price" />
+                        <field name="pending_amount" />
+                        <field name="Paymentmethod" />
+                    </xpath>
+
+            </field>
+        </record> 
+
+
+        <record model="ir.ui.view" id="view_move_form_inherit">
+            <field name="name">account.move.form.inherit</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form" />
+            <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_post']" position="after">
+             <button name="button" string="Register payment" type="object"
+                        class="oe_highlight"
+                        attrs="{'invisible': [('states','=', 'paid')]}" />
+            </xpath>
+                   
+               <xpath expr="//field[@name='id']" position="before">
+                <field name="states" invisible="1" />
+                <widget name="web_ribbon" title="Paid" bg_color="bg-success"
+                        attrs="{'invisible': [('states','!=', 'paid')]}" />
+                </xpath>
+                <xpath expr="//field[@name='payment_reference']" position="after">
+                    
+                    <field name="paymentdate" />
+                    <field name="cust_id" />
+                    <field name="email" />
+                    <field name="contact" />
+                    <field name="gender" />
+                    <field name="address" />
+                    <field name="checkin" />
+                    <field name="checkout" />
+                    
+                    <!-- <field name="total_price" />
+                    <field name="pending_amount" /> -->
+                    <field name="Paymentmethod" />
+                </xpath>
+                 <xpath expr="//field[@name='payment_reference']" position="attributes">
+                   <attribute name="invisible">1</attribute>
+                 </xpath>
+
+                  <xpath expr="//page[@id='invoice_tab']" position="before">
+                    <page id="booking_tab" name="booking" string="booking">
+                        <field name="room_ids" />
+                        <field name="spa_ids" />
+                        <field name="food_ids" />
+                        <group class="oe_subtotal_footer oe_right">
+                         <field name="total_price" />
+                        <field name="pending_amount" /> 
+                        </group>
+                    </page>
+                  </xpath>
+
+            </field>
+        </record>
+
+        <!-- <record model="ir.ui.view" id="view_move_form_inherit">
+            <field name="name">account.move.inherit</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form" />
+            <field name="arch" type="xml">
+                <header>
+                    <button name="button" string="Register payment" type="object"
+                        class="oe_highlight"
+                        attrs="{'invisible': [('states','=', 'paid')]}" />
+                    <field name="states" widget="statusbar" />
+                </header>
+                
+                <xpath expr="//field[@name='payment_reference']" position="after">
+                <widget name="web_ribbon" title="Paid" bg_color="bg-warning"
+                    attrs="{'invisible': [('states','!=', 'paid')]}" />
+                    <form string="Custom Account Move Form">
+                        <sheet>
+                            <group>
+                                <group>
+                                    <field name="cust_id" />
+                                    <field name="paymentdate" />
+                                    <field name="email" />
+                                    <field name="contact" />
+                                </group>
+                                <group>
+                                    <field name="gender" />
+                                    <field name="address" />
+                                    <field name="checkin" />
+                                    <field name="checkout" />
+                                </group>
+                                <field name="room_ids" />
+                                <field name="spa_ids" />
+                                <field name="food_ids" />
+                                <group>
+                                    <field name="total_price" />
+                                    <field name="pending_amount" />
+                                    <field name="Paymentmethod" />
+                                </group>
+
+                            </group>
+                        </sheet>
+                    </form>
+
+                </xpath>
+            </field>
+        </record> -->
+
+    </data>
+</odoo>

@@ -1,0 +1,185 @@
+/* Registration */
+/* .container1{
+    /* background-image: url('/hotel_management/static/img/registration.jpeg'); */
+    /* height: 550px;
+    width: 500px;
+    padding: 25px 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 37%;
+    opacity: 0.7; */
+
+    
+/* }  */
+.form-group1{
+    padding: 15px 20px;
+    /* margin-right: 150px; */
+    text-align: left;
+    border-radius: 15px;
+    color: black;
+
+}
+
+/* check availability */
+.container2 {
+    /* background-image: url('/hotel_management/static/img/hotel_event.jpeg'); */
+    height: 100%;
+    width: 500px;
+    padding: 25px 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 37%;
+    /* background-color: rgb(214, 219, 219); */
+    border-radius: 15px;
+    box-shadow: 0px 0px 9px 2px rgb(156, 144, 144);
+  }
+  
+
+  .container3 {
+    /* background-image: url('/hotel_management/static/img/hotel_event.jpeg'); */
+    height: 800px;
+    width: 500px;
+    padding: 25px 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 37%;
+    background-color: rgb(214, 219, 219);
+    border-radius: 15px;
+    box-shadow: 0px 0px 9px 2px rgb(156, 144, 144);
+    
+  }
+
+  .checknow-btn{
+    margin-top: 30px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 6px 6px ;
+    font-size: 15px;
+    border-radius: 7px;
+    border: none;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 6px 1px rgb(54, 179, 152);
+
+    
+  }
+  .checknow-btn:hover{
+    box-shadow: 0px 0px 9px 2px rgb(112, 187, 42);
+    font-size: 14px;
+  }
+
+  
+
+
+.form-group2{
+    padding: 15px 20px;
+    text-align: left;
+    border-radius: 15px;
+    color: black;
+    font-size: 1rem;
+
+}
+
+
+
+
+body{
+    font-family: sans-serif;
+
+}
+
+.container4{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 6px 1px rgb(54, 179, 152);
+
+
+    
+}
+.Loginbox{
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 100%;
+    display: table;
+    text-align: center;
+    position: relative;
+}
+.mdi{
+    color: black;
+}
+.top{
+    display: table-row;
+}
+.form-grp{
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.10);
+    text-align: left;
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.form-grp i{
+    background-color: azure;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.form-grp input{
+    font-size: 20px;
+    color: black;
+    background-color: azure;
+    border: none;
+    height: 40px;
+    padding: 0;
+    width: 100%;
+    vertical-align: middle;
+}
+.form-grp input:focus{
+    outline: none;
+}
+.form-grp input:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+.form-grp select{
+    font-size: 20px;
+    color: black;
+    background-color: azure;
+    border: none;
+    height: 40px;
+    padding: 0;
+    width: 100%;
+    vertical-align: middle; 
+    color: rgb(122, 121, 121);
+}
+
+.title{
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.register-btn{
+    background-color: rgb(19, 150, 216);
+    background-color:rgb(99, 96, 96);
+
+    border-radius: 8px;
+    color: white;
+    border: none;
+    padding: 0px 30px 0px 30px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.register-btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0 1px #29c648, 0 0 10px 5px rgba(0, 0, 0, 0.31);
+    color: white;
+}
+
+
+
+  
+

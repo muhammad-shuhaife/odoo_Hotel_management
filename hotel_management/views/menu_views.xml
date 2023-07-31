@@ -1,0 +1,162 @@
+<odoo>
+    <data>
+        <menuitem name="Hotel"
+            id="hotel_menu_root"
+            sequence='20'
+        />
+
+        <menuitem id="hotel_booking_menu"
+            name="Booking"
+            parent="hotel_management.hotel_menu_root"
+            action="hotel_management.booking_action"
+            sequence="1" />
+
+        <menuitem id="room_main_menu"
+            name="Room Management"
+            parent="hotel_management.hotel_menu_root"
+            sequence="1" />
+
+        <menuitem id="room_menu"
+            name="Room"
+            parent="hotel_management.room_main_menu"
+            action="hotel_management.room_booking_action"
+            sequence="1" />
+
+        <menuitem id="room_type_menu"
+            name="Room type"
+            parent="hotel_management.room_main_menu"
+            action="hotel_management.room_management_action"
+            sequence="2" />
+
+
+        <menuitem id="amenities_menu"
+            name="Amenities"
+            parent="hotel_management.room_main_menu"
+            action="hotel_management.amenities_m_action"
+            sequence="3" />
+
+
+        <menuitem name="Event"
+            id="hotel_event_main_menu"
+            parent="hotel_management.hotel_menu_root"
+            sequence="1"
+        />
+
+        <menuitem name="Event"
+            id="hotel_event_menu"
+            parent="hotel_management.hotel_event_main_menu"
+            action="hotel_management.event_booking_action"
+            sequence="1"
+        />
+
+        <menuitem name="Event Type"
+            id="hotel_event_type_menu"
+            parent="hotel_management.hotel_event_main_menu"
+            action="hotel_management.event_management_action"
+            sequence="2"
+        />
+
+        <menuitem name="Payment"
+            id="payment_menu"
+            parent="hotel_management.hotel_menu_root"
+            action="hotel_management.payment_action"
+            sequence="1" /> 
+
+        <menuitem id="house_keeping_main_menu"
+            name="HouseKeeping"
+            parent="hotel_management.hotel_menu_root"
+            sequence="1" />
+
+        <menuitem id="house_keeping_menu"
+            name="HouseKeeping"
+            parent="hotel_management.house_keeping_main_menu"
+            action="hotel_management.housekeeping_action"
+            sequence="1" />
+
+         <menuitem id="services_menu"
+            name="Services"
+            parent="hotel_management.house_keeping_main_menu"
+            action="hotel_management.services_action"
+            sequence="2" />    
+
+        <menuitem id="food_menu"
+            name="Food_Menu"
+            parent="hotel_management.hotel_menu_root"
+            action="hotel_management.food_booking_action"
+            sequence="1" />
+
+
+        <menuitem id="contract_menu"
+            name="Contract"
+            parent="hotel_management.hotel_menu_root"
+            action="hotel_management.contract_action"
+            sequence="1" />
+
+
+        <menuitem id="staff_menu"
+            name="Staff"
+            parent="hotel_management.hotel_menu_root"
+            action="hotel_management.staff_action"
+            sequence="1" />
+
+        <menuitem id="staff_attendance_menu"
+            name="Attendance"
+            parent="hotel_management.hotel_menu_root"
+            action="hotel_management.staff_attendance_action"
+            sequence="1" />
+
+        <menuitem id="cab_booking_menu_root"
+            name="Cab Booking"
+            parent="hotel_management.hotel_menu_root"
+            action="hotel_management.cab_booking_action"
+            sequence="1" />
+
+         <menuitem id="cab_management_menu_root"
+            name="Cab Management"
+            parent="hotel_management.hotel_menu_root"
+            action="hotel_management.cab_management_action"
+            sequence="1" />
+    
+
+        <menuitem id="customer_menu_root"
+            name="Customer"
+            parent="hotel_management.hotel_menu_root"
+            action="hotel_management.customer_action"
+            sequence="1" />
+
+
+        <menuitem id="fooditem_menu"
+            name="Fooditem"
+            parent="hotel_management.hotel_menu_root"
+            action="hotel_management.food_management_action"
+            sequence="1" />
+
+        <menuitem id="hotel_spa_main_menu"
+            name="Spa"
+            parent="hotel_management.hotel_menu_root"
+            sequence="1"
+        />        
+
+
+        <menuitem id="hotel_spa_menu"
+            name="Spa"
+            parent="hotel_management.hotel_spa_main_menu"
+            action="hotel_management.spa_action"
+            sequence="1"
+        />    
+
+        <menuitem id="spatype_menu"
+            name="Spa Type"
+            parent="hotel_management.hotel_spa_main_menu"
+            action="hotel_management.spa_management_action"
+            sequence="2" />    
+
+
+        <menuitem id="fooditem_menu"
+            name="Food Management"
+            parent="hotel_management.hotel_menu_root"
+            action="hotel_management.food_management_action"
+            sequence="1"/>   
+
+    </data>
+</odoo>

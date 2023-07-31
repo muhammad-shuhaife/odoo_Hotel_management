@@ -1,0 +1,85 @@
+<odoo>
+  <data>
+
+<!-- START of Action ==================================================================================================================== -->
+
+    <record id="hotel_management.food_booking_action" model="ir.actions.act_window">
+      <field name="name">Food Menu</field>
+      <field name="res_model">hotel_management.food_b</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="xml">
+        <p class="o_view_nocontent_smiling_face">
+          Create Food_Menu
+        </p>
+      </field>
+    </record>
+
+<!-- END of Action ==================================================================================================================== -->
+  
+<!-- START Tree View ==================================================================================================================== -->
+
+    <record id="food_booking_tree" model="ir.ui.view">
+      <field name="name">hotel_management.food_b.tree</field>
+      <field name="model">hotel_management.food_b</field>
+      <field name="arch" type="xml">
+        <tree string="food">
+          <field name="food_id" />
+          <field name="category" />
+          <field name="type1" />
+          <field name="spiciness_level" />
+          <field name="category" />
+          <field name="price" />
+        </tree>
+      </field>
+    </record>
+
+<!-- END of Tree View ==================================================================================================================== -->
+
+<!-- START Form View ==================================================================================================================== -->
+
+    <record id="food_booking_form" model="ir.ui.view">
+      <field name="name">hotel.food_b.form</field>
+      <field name="model">hotel_management.food_b</field>
+      <field name="arch" type="xml">
+        <form string="Food">
+          <sheet>
+            <group>
+              <group>
+                <field name="food_id" />
+                <field name="category" />
+                <field name="type1" />
+              </group>
+              <group>
+                <field name="description" />
+                <field name="spiciness_level" />
+                <field name="price" />
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+<!-- END Form View ==================================================================================================================== -->
+
+<!-- START Search View ==================================================================================================================== -->
+
+    <record id="food_booking_search" model="ir.ui.view">
+      <field name="name">hotel.food_b.search</field>
+      <field name="model">hotel_management.food_b</field>
+      <field name="arch" type="xml">
+        <search string="name">
+          <field name="name" />
+          <field name="category" />
+          <field name="type1" />
+          <field name="description" />
+          <field name="spiciness_level" />
+          <field name="price" />
+        </search>
+      </field>
+    </record>
+
+<!-- END Search View ==================================================================================================================== -->
+
+  </data>
+</odoo>        

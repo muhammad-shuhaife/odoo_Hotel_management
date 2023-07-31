@@ -1,0 +1,225 @@
+<odoo>
+    <data>
+
+        <!-- START of Action
+        ==================================================================================================================== -->
+
+        <record id="booking_action" model="ir.actions.act_window">
+            <field name="name">Booking</field>
+            <field name="res_model">hotel_management.booking</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Booking
+                </p>
+            </field>
+        </record>
+
+        <!-- END of Action
+        ==================================================================================================================== -->
+
+        <!-- START Tree View
+        ==================================================================================================================== -->
+
+        <record id="hotel_booking_tree" model="ir.ui.view">
+            <field name="name">hotel_management.booking.tree</field>
+            <field name="model">hotel_management.booking</field>
+            <field name="arch" type="xml">
+                <tree string="booking">
+                    <field name="id" />
+                    <field name="cust_id" />
+                    <field name="email" />
+                    <field name="contact" />
+                    <field name="gender" />
+                    <field name="checkin" />
+                    <field name="checkout" />
+                    <field name="address" />
+                    <field name="state" />
+                </tree>
+            </field>
+        </record>
+
+        <!-- END of Tree View
+        ==================================================================================================================== -->
+
+        <!-- START Form View
+        ==================================================================================================================== -->
+
+        <record id="hotel_booking_form" model="ir.ui.view">
+            <field name="name">hotel_management.booking.form</field>
+            <field name="model">hotel_management.booking</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_confirm" string="Confirm" type="object"
+                            attrs="{'invisible': [('state','=', 'confirm')]}" />    
+                        <button name="action_invoice" string="Create invoice" type="object"
+                            class="oe_highlight" />
+                        <field name="state" widget="statusbar" />
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+
+                                <group>
+                                    <field name="cust_id" placeholder="Customer Name"
+                                        style="color:#898687" />
+                                </group>
+                            </h1>
+                        </div>
+                        <field name="booking_id" />
+
+                        <group>
+                            <group>
+
+                                <field name="contact" />
+                                <field name="alcontact" />
+                            </group>
+                            <group>
+                                <field name="email" />
+                                <field name="gender" />
+                            </group>
+                            <group>
+                                <field name="checkin" />
+                                <field name="checkout" />
+                            </group>
+                            <group>
+                                <field name="address" />
+                            </group>
+                            <group>
+                                <field name="invoice_id" />
+                            </group>
+                        </group>
+
+                        <!-- START of a Notebook
+                        ====================================================================== -->
+
+                        <notebook>
+                            <page string="Room">
+                                <!-- <group> -->
+                                <field name="room_ids">
+                                    <tree editable="bottom">
+                                        <!-- <field name="availability" /> -->
+                                        <field name="booked_date" />
+                                        <field name="check_in" />
+                                        <field name="check_out" />
+
+                                        <field name="price" />
+                                        <field name="room_type_id" />
+                                        <field name="room_no" />
+                                        <field name="amenities_name" />
+                                        <field name="payment_type" />
+                                        <field name="payment" />
+                                    </tree>
+                                </field>
+
+                            </page>
+                            <page string="Spa">
+                                <group>
+                                    <field name='spa_ids'>
+                                        <tree>
+                                            <field name="name" />
+                                            <field name="date" />
+                                            <field name="schedule_time" />
+                                            <field name="price" />
+                                        </tree>
+                                    </field>
+                                </group>
+
+                                <!-- </group> -->
+
+                            </page>
+
+                            <page string="Food">
+                                <!-- <group> -->
+                                <field name="food_ids">
+                                    <tree editable="bottom">
+                                        <field name="food_id" />
+                                        <field name="category" />
+                                        <field name="type1" />
+                                        <field name="description" />
+                                        <field name="spiciness_level" />
+                                        <field name="price" />
+                                    </tree>
+                                </field>
+                                <!-- </group> -->
+                            </page>
+
+
+                            <page string="Event">
+                                <!-- <group> -->
+                                <field name="event_ids">
+                                    <tree editable="bottom">
+                                        <!-- <field name="id" string="Event ID" />
+                                        <field name="name_id" /> 
+                                        <field name="name" />
+                                        <field name="attendees" />
+                                        <field name="description" />
+                                        <field name="staff_id" />
+                                        <field name="contact" />
+                                        <field name="price" /> -->
+                                    </tree>
+                                </field>
+                                <!-- </group> -->
+                            </page>
+
+                            <page string="Cab">
+                                <!-- <group> -->
+                                <field name="cab_ids">
+                                    <tree editable="bottom">
+                                        <field name="cust_id" />
+                                        <field name="booking_id" />
+                                        <field name="no_of_cab_booked" />
+                                    </tree>
+                                </field>
+
+                            </page>
+                            <page string="Bill">
+                                <tree>
+                                    <field name="room_ids" />
+                                    <field name="spa_ids" />
+                                    <field name="food_ids" />
+                                    <field name="event_ids" />
+                                    <field name="cab_ids" />
+                                </tree>
+                                <strong>
+                                    <b>
+                                        <group style="text-align: right;">
+                                            <field name="total_price" />
+                                        </group>
+                                    </b>
+                                </strong>
+                                <strong>
+                                    <b>
+                                        <group style="text-align: right;">
+                                            <field name="pending_amount" />
+                                        </group>
+                                    </b>
+                                </strong>
+                                <!-- </group> -->
+
+                            </page>
+                        </notebook>
+
+                        <!-- END of a Notebook
+                        ====================================================================== -->
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- END Form View
+        ==================================================================================================================== -->
+
+    </data>
+</odoo>
+    
+    
+    
+    
+    
+    
+
+
+            

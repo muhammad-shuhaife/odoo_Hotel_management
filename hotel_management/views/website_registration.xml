@@ -1,0 +1,79 @@
+<odoo>
+	<record id="menu_login_website" model="website.menu">
+		<field name="name">Registration</field>
+		<field name="url">/registration</field>
+		<field name="parent_id" ref="website.main_menu" />
+		<field name="sequence">5</field>
+	</record>
+	
+	<template id="hotel_assets_frontend" name="Hotel_Patient_Frontend" inherit_id="web.assets_frontend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/css" href="hotel_management/static/src/css/login.css"/>
+            </xpath>
+    </template>
+	<template id="registration" name="registration">
+		<t t-call="website.layout">
+			<div id="wrap" style="margin-top: 50px;margin-bottom:50px;">
+				<div class="oe_structure">
+					<div class="container4">
+					   <div class="Loginbox">
+						<form role="form" action="/customer" method="POST">
+							<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+							<div style="color:gray; margin-bottom:30px;"><h3>Register</h3></div>
+							<div class="form-grp">
+							<input name="name" t-att-value="name" type="text" placeholder="Name" required="1"/>
+						</div>
+						<div class="form-grp">
+							<input name="email" tt-att-value="email" type="text" placeholder="Email" required="1"/>
+						</div>
+						<div class="form-grp">
+							<input name="address" t-att-value="address" type="text" placeholder="Address" required="1"/>
+						</div>
+						<div class="form-grp">
+							<input type="text" t-att-value="contact" name="contact" placeholder="Contact" required="1"/>
+						</div>
+						<div class="form-grp">
+						<select name="gender">
+					<option value="" disabled="disabled" selected="selected">Gender</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+					</select>
+						</div>
+							<div class="btn-grp">
+								<center><input type="submit" value="Register" class="register-btn"/></center>
+							</div>
+						</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</t>
+	</template>
+	<record id="customer_thanks" model="website.page">
+		<field name="name">Thanks</field>
+		<field name="type">qweb</field>
+		<field name="url">Customer-thank-you</field>
+		<field name="website_published">True</field>
+		<field name="key">hotel_management.customer_thanks</field>
+		<field name="arch" type="xml">
+			<t name="thanks" t-name="   ">
+				<t t-call="website.layout">
+					<div id="wrap">
+						<div class="container">
+							<h1>Thanks</h1>
+							<div class="row">
+								<div class="col-lg-8">
+									<div class="alert alert-success" role="status">Your created a account</div>
+									 <p><a class="d-inline-flex align-items-center m-button m-button-primary marriott-horizontal-carousel__container-cta custom_click_track" href="/checkavailable" target="_self">Book Now
+                
+            </a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</t>
+			</t>
+		</field>
+	</record>
+</odoo>

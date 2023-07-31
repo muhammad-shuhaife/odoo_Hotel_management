@@ -1,0 +1,90 @@
+<odoo>
+    <data>
+
+<!-- START of Action ==================================================================================================================== -->
+
+        <record id = "hotel_management.cab_booking_action" model = "ir.actions.act_window">
+            <field name = "name"> Cab Booking</field>
+            <field name = "res_model">hotel_management.cab_b</field>
+            <field name = "view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Add your 1st 'Cab Booking Details'
+                </p>
+            </field>
+        </record>
+
+<!-- END of Action ==================================================================================================================== -->
+
+<!-- START Tree View ==================================================================================================================== -->
+
+        <record id = "cab_booking_tree" model = "ir.ui.view">
+            <field name = "name">hotel_management.cab_b.tree</field>
+            <field name = "model">hotel_management.cab_b</field>
+            <field name = "arch" type = "xml">
+                <tree string = "Cab Booking">
+                    <field name = "cab_b_booking_date" placeholder = "Cab's Booking Date" options="{'date_format': 'YYYY-MM-DD'}"/>
+                    <field name = "cab_b_drop_off_location" placeholder = "Location of the Destionation/Drop-Off"/>
+                    
+                    <field name = "no_of_cab_booked" options="{'no_create': True}"/>
+
+                    <!-- <field name = "name" widget = "many2many_tags">
+                        <field name = "name"/>
+                        <field name = "cab_m_company_name"/>
+                        <field name = "cab_m_type"/>
+                        <field name = "cab_m_capacity"/>
+                    </field> -->
+
+                </tree>
+            </field>
+        </record>
+
+<!-- END of Tree View ==================================================================================================================== -->
+
+<!-- START Form View ==================================================================================================================== -->
+
+        <record id = "cab_booking_form" model = "ir.ui.view">
+            <field name = "name">hotel_management.cab_b.form</field>
+            <field name = "model">hotel_management.cab_b</field>
+            <field name = "arch" type = "xml">
+                <form string = "Cab Booking">
+                    <sheet>
+                        <group string = "Cab Booking Details">
+                            <field name = "cab_b_booking_date" placeholder = "Cab's Booking Date" options="{'date_format': 'YYYY-MM-DD'}"/>
+                            <field name = "cab_b_drop_off_location" placeholder = "Location of the Destionation/Drop-Off"/>
+                        </group>
+
+                        <!-- <group> -->
+                            <field name = "no_of_cab_booked" options="{'no_create': True}"/>
+                            <!-- <field name = "cab_details" widget = "many2many_tags">
+                                <field name = "name"/>
+                                <field name = "cab_m_company_name"/>
+                                <field name = "cab_m_type"/>
+                                <field name = "cab_m_capacity"/>
+                            </field> -->
+
+                        <!-- </group> -->
+                    </sheet>
+                </form>    
+            </field>    
+        </record>
+
+<!-- END Form View ==================================================================================================================== -->
+
+<!-- START Search View ==================================================================================================================== -->
+
+        <record id = "cab_booking_search" model = "ir.ui.view">
+            <field name = "name">hotel_management.cab_b.search</field>
+            <field name = "model">hotel_management.cab_b</field>
+            <field name = "arch" type = "xml">
+                <search string = "Cab Booking">
+                    <field name = "cab_b_booking_date" placeholder = "Cab's Booking Date" options="{'date_format': 'YYYY-MM-DD'}"/>
+                    <field name = "cab_b_drop_off_location" placeholder = "Location of the Destionation/Drop-Off"/>
+                </search>
+            </field>
+        </record>
+
+<!-- END Search View ==================================================================================================================== -->
+
+    </data>
+</odoo>

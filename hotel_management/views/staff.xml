@@ -1,0 +1,126 @@
+<odoo>
+  <data>
+
+<!-- START of Action ==================================================================================================================== -->
+
+    <record id="staff_action" model="ir.actions.act_window">
+      <field name="name">Staff</field>
+      <field name="res_model">hotel_management.staff</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+          Create Staff
+        </p>
+      </field>
+    </record>
+
+<!-- END of Action ==================================================================================================================== -->
+  
+<!-- START Tree View ==================================================================================================================== -->
+
+    <record id="hotel_staff_tree" model="ir.ui.view">
+      <field name="name">hotel_management.staff.tree</field>
+      <field name="model">hotel_management.staff</field>
+      <field name="arch" type="xml">
+        <tree string="staff">
+          <field name="name" />
+          <field name="work_mobile" />
+          <field name="work_phone" />
+          <field name="work_email" />
+          <field name="gender" />
+          <field name="date_of_birth" />
+          <field name="marital_status" />
+          <!-- <field name="hotel_name" /> -->
+          <field name="department" />
+          <field name="job_title" />
+          <field name="working_schedule" />
+          <field name="nationality" />
+          <field name="address" />
+          <field name="salary" />
+        </tree>
+      </field>
+    </record>
+
+<!-- END of Tree View ==================================================================================================================== -->
+
+<!-- START Form View ==================================================================================================================== -->
+
+    <record id="hotel_staff_tree_form" model="ir.ui.view">
+      <field name="name">hotel_management.staff.form</field>
+      <field name="model">hotel_management.staff</field>
+      <field name="arch" type="xml">
+        <form string="staff">
+          <sheet>
+            <div class="oe_button_box" name="button_box">
+              <button name="action_open" class="o_stat_button" type="object" icon="fa-star">
+                <!--                              <span class="o_stat_value text-danger">-->
+                <!--                                  <span class="o_field_integer o_field_number o_field_widget o_readonly_modifier"
+                name="contracts_count" data-original-title="" title=""
+                aria-invalid="false">0</span>-->
+                <!--                               </span><br/>-->
+                <span class="o_stat_text">Attendance</span>
+
+              </button>
+
+              <button name="action_cl" class="o_stat_button" type="object" height="70px">
+                <i class="fa fa-fw o_button_icon fa-book" />
+                <span class="o_stat_text">Contract</span>
+              </button>
+            </div>
+            <div class="oe_title">
+              <h1>
+                <group>
+                  <field name="name" placeholder="Enter Your Name" />
+                </group>
+              </h1>
+            </div>
+            <group>
+              <group>
+                <field name="name" placeholder="Enter Your Name" />
+                <field name="work_mobile" />
+                <field name="work_phone" />
+                <field name="work_email" />
+                <field name="gender" />
+                <field name="date_of_birth" />
+                <field name="marital_status" />
+              </group>
+              <group>
+                <!-- <field name="hotel_name" /> -->
+                <field name="department" />
+                <field name="job_title" />
+                <field name="working_schedule" />
+                <field name="nationality" />
+                <field name="address" />
+                <field name="salary" />
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+<!-- END Form View ==================================================================================================================== -->
+
+     <!-- <record id="hotel_staff_tree" model="ir.ui.view" >
+
+         <field name="name">hotel.staff.tree</field>
+
+         <field name="name">hotel_management.staff.tree</field>
+
+         <field name="model">hotel_management.staff</field>
+         <field name="arch" type="xml">
+            <tree string="staff">
+               <field name="s_id" />
+               <field name="name" />
+               <field name="type"   />
+
+                
+
+               <field name="salary"  />
+           </tree>
+       </field>
+     </record> -->
+
+
+  </data>
+</odoo>

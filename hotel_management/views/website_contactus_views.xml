@@ -1,0 +1,60 @@
+<odoo>
+	<record id="menu_contactus_website" model="website.menu">
+		<field name="name">Contact us</field>
+		<field name="url">/contactus</field>
+		<field name="parent_id" ref="website.main_menu" />
+		<field name="sequence">6</field>
+	</record>
+	<template id="contact_us" name="Contact us">
+		<t name="Contact Us" t-name="website.contactus">
+			<t t-call="website.layout">
+				<div id="wrap">
+					<div class="oe_structure">
+						<section class="s_title bg-black-50 o_colored_level s_parallax_no_overflow_hidden oe_img_bg pt0 pb72" data-vcss="001" data-snippet="s_title" data-scroll-background-ratio="0" data-name="Title" style="background-image: url(&quot;/hotel_management/static/img/fppd3.jpeg&quot;); background-position: 0% 19.9248%;">
+							<div class="container">
+								<h1>
+									<br />
+								</h1>
+								<h1>
+									<b>
+										Contact us
+									</b>
+								</h1>
+							</div>
+						</section>
+					</div>
+					<div class="container mt-4 mb-5">
+						<div class="row">
+							<div class="col-lg-7 col-xl-6 mr-lg-auto">
+								<div class="oe_structure">
+									<section class="s_text_block o_colored_level" data-snippet="s_text_block" data-name="Text">
+										<div class="container">
+											<div class="row">
+												<div class="col-lg-12 o_colored_level">
+													<p>
+														Contact us about anything related to our hotel or services.
+														<br />
+														We'll do our best to get back to you as soon as possible.
+													</p>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="text-center my-3" name="mail_button">
+									<a role="button" t-attf-href="mailto:{{ res_company.email }}" class="btn btn-primary" id="o_contact_mail">
+										Send us an email
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-4 mt-4 mt-lg-0">
+								<t t-call="website.company_description" />
+							</div>
+						</div>
+					</div>
+					<div class="oe_structure mt-2" />
+				</div>
+			</t>
+		</t>
+	</template>
+</odoo>

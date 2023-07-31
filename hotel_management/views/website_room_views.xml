@@ -1,0 +1,818 @@
+<odoo>
+	<record id="menu_room_website" model="website.menu">
+		<field name="name">Room</field>
+		<field name="url">/room</field>
+		<field name="parent_id" ref="website.main_menu" />
+		<field name="sequence">4</field>
+	</record>
+
+	<template id="room" name="room">
+		<t t-name="website.room">
+			<t t-call="website.layout">
+				<div id="wrap" class="oe_structure oe_empty">
+					<section class="s_cover bg-black-50 o_colored_level s_parallax_no_overflow_hidden pt152 pb216 oe_img_bg" data-scroll-background-ratio="0" data-snippet="s_cover" data-name="Cover" style="background-position: 0% 27.2654%; background-image: url(&quot;/hotel_management/static/img/bed7.png&quot;);" data-original-id="495" data-original-src="/hotel_management/static/img/bed7.png" data-mimetype="image/png" data-resize-width="1125">
+						<div class="s_allow_columns container">
+							<h1 style="text-align: center;">
+								<font style="font-size: 62px; font-weight: bold;" class="text-o-color-3">
+									JW MARRIOTT
+								</font>
+							</h1>
+							<p>
+								<br />
+							</p>
+							<p class="lead" style="text-align: center;">
+								<font style="" class="text-black">
+									&amp;nbsp;
+								</font>
+								<font style="color: rgb(123, 57, 0);">
+									&amp;nbsp;
+								</font>
+								<b>
+									<i>
+										<font style="" class="text-o-color-3">
+											Discover modern elegance at JW Marriott Hotel in Kerala,India.
+										</font>
+									</i>
+								</b>
+							</p>
+							<p class="lead" style="text-align: center;">
+								<b>
+									<i>
+										<font style="" class="text-o-color-3">
+											Enjoy your stay to the fullest extent.
+										</font>
+										<font style="" class="text-o-color-3">
+											<br />
+										</font>
+									</i>
+								</b>
+							</p>
+							<b>
+							</b>
+							<h1 style="text-align: center;">
+							</h1>
+						</div>
+					</section>
+					<section class="s_text_block pt32 pb32 o_colored_level" data-snippet="s_text_block" data-name="Text">
+						<div class="container s_allow_columns">
+							<p class="o_default_snippet_text">
+								<br />
+							</p>
+							<h1 class="animate animate-active fadeIn page-header__title push-v--mobile--small" style="text-align: justify;">
+								&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; SLEEP BEAUTIFULLY
+							</h1>
+							<h1 class="animate animate-active fadeIn page-header__title push-v--mobile--small" style="text-align: justify;" />
+							<p class="animate animate-active fadeIn page-header__body page-header__description push-v--mobile--x-small text--body-1" style="text-align: justify;" />
+							<div style="text-align: justify;">
+								<p>
+									&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Each of the 83 rooms, suites and Hideaway Cottage at JW Marriott represent
+								</p>
+								<p>
+									&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; traditional elegance and finesse. Following extensive refurbishment,many of the rooms and
+								</p>
+								<p>
+									&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; suites have been individually and lovingly designed, combining the marriott’s original features with
+									<br />
+								</p>
+								<p>
+									&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; latest modern luxuries. Meticulous attention to detail can be found in the unique works of art,
+									<br />
+								</p>
+								<p>
+									&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; carefully sourced antique furniture and sumptuous fabrics with custom designed carpets,
+								</p>
+								<p>
+									&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; bespoke beds, feature lighting, exquisite towelling and Egyptian Cotton bed linen.
+								</p>
+							</div>
+							<p style="" />
+						</div>
+					</section>
+					<section class="s_image_gallery s_image_gallery_show_indicators s_image_gallery_indicators_rounded pt24 o_colored_level o_slideshow" data-vcss="001" data-columns="3" style="overflow: hidden; height: 678px;" data-snippet="s_image_gallery" data-name="Image Gallery">
+						<div class="container">
+							<div id="slideshow_1686112872797" class="carousel slide" data-ride="carousel" data-interval="0" style="margin: 0 12px;">
+								<div class="carousel-inner" style="padding: 0;">
+									<div class="carousel-item active" style="">
+										<img class="img img-fluid d-block " src="/hotel_management/static/img/bed9.jpeg" style="" alt="" data-name="Image" data-index="0" loading="lazy" />
+									</div>
+									<div class="carousel-item undefined" style="">
+										<img class="img img-fluid d-block " src="/hotel_management/static/img/bed6.png" style="" alt="" data-name="Image" data-index="1" loading="lazy" />
+									</div>
+									<div class="carousel-item undefined" style="">
+										<img class="img img-fluid d-block " src="/hotel_management/static/img/bed1.png" style="" alt="" data-name="Image" data-index="2" loading="lazy" />
+									</div>
+									<div class="carousel-item undefined" style="">
+										<img class="img img-fluid d-block " src="/hotel_management/static/img/bed8.jpg" style="" alt="" data-name="Image" data-index="3" loading="lazy" />
+									</div>
+									<div class="carousel-item undefined" style="">
+										<img class="img img-fluid d-block " src="/hotel_management/static/imgbed5.png" style="" alt="" data-name="Image" data-index="4" loading="lazy" />
+									</div>
+									<div class="carousel-item undefined" style="">
+										<img class="img img-fluid d-block " src="/hotel_management/static/img/bed7.jpg" style="" alt="" data-name="Image" data-index="6" loading="lazy" />
+									</div>
+								</div>
+								<ul class="carousel-indicators">
+									<li data-target="#slideshow_1686112872797" data-slide-to="0" class="active" style="background-image: url(/hotel_management/static/img/bed9.jpeg)" />
+									<li data-target="#slideshow_1686112872797" data-slide-to="1" style="background-image: url(/hotel_management/static/img/bed6.png)" />
+									<li data-target="#slideshow_1686112872797" data-slide-to="2" style="background-image: url(/hotel_management/static/img/bed1.png)" />
+									<li data-target="#slideshow_1686112872797" data-slide-to="3" style="background-image: url(/hotel_management/static/img/bed8.jpg)" />
+									<li data-target="#slideshow_1686112872797" data-slide-to="4" style="background-image: url(/hotel_management/static/img/bed5.png)" />
+									<li data-target="#slideshow_1686112872797" data-slide-to="5" style="background-image: url(/hotel_management/static/img/bed8.jpg)" />
+									<li data-target="#slideshow_1686112872797" data-slide-to="6" style="background-image: url(/hotel_management/static/img/bed7.jpg)" />
+								</ul>
+								<a class="carousel-control-prev o_we_no_overlay" href="#slideshow_1686112872797" data-slide="prev" aria-label="Previous" title="Previous">
+									<span class="fa fa-chevron-left fa-2x text-white" />
+									<span class="sr-only">
+										Previous
+									</span>
+								</a>
+								<a class="carousel-control-next o_we_no_overlay" href="#slideshow_1686112872797" data-slide="next" aria-label="Next" title="Next">
+									<span class="fa fa-chevron-right fa-2x text-white" />
+									<span class="sr-only">
+										Next
+									</span>
+								</a>
+							</div>
+						</div>
+					</section>
+					<section class="s_text_block pt32 pb32 o_colored_level" data-snippet="s_text_block" data-name="Text">
+						<div class="container s_allow_columns">
+							<p />
+						</div>
+					</section>
+					<section class="s_text_block pt32 pb32 o_colored_level" data-snippet="s_text_block" data-name="Text">
+						<div class="container s_allow_columns">
+							<p>
+								<br />
+							</p>
+						</div>
+					</section>
+					<section class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_image_text" data-name="Image - Text" style="">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-6 pt16 pb16 o_colored_level">
+									<img src="/hotel_management/static/img/bed7.jpg" class="img img-fluid mx-auto" alt="" loading="lazy" style="transform: translateX(-12%) translateY(-6.3%) scaleX(1.26) scaleY(2);" data-original-title="" title="" aria-describedby="tooltip822179" data-original-id="494" data-original-src="/hotel_management/static/img/bed7.jpg" data-mimetype="image/jpeg" data-resize-width="690" data-quality="100" />
+								</div>
+								<div class="col-lg-6 pt16 pb16 o_colored_level">
+									<h1 class="title" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed=".3">
+										&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Premium Suite
+									</h1>
+									<h1 class="title" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed=".3">
+										<br />
+									</h1>
+									<p>
+										&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Room with a Living Area, Bed Room and Balcony, Microwave &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Oven,Bathrobe &amp;amp; Hair Dryer available on request.
+									</p>
+									<div class="py-2">
+										&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+									</div>
+									<div class="row">
+										<div class="col-6 o_colored_level">
+											<div class="icon-box">
+												<div class="icon">
+													&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+													<img src="https://www.cocoonpune.com/assets/img/icons/area.svg" class="img-fluid" alt="Room Size" loading="lazy" style="" />
+													<br />
+													&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+													<br />
+												</div>
+												<p>
+													&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 525 sqft Room
+												</p>
+												<p>
+													<br />
+												</p>
+											</div>
+										</div>
+										<div class="col-6 o_colored_level">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="https://www.cocoonpune.com/assets/img/icons/living-area.svg" class="img-fluid" alt="Area" loading="lazy" style="" />
+													<br />
+													<br />
+												</div>
+												<p>
+													&amp;nbsp;Living Area
+												</p>
+											</div>
+										</div>
+										<div class="col-6 o_colored_level">
+											<div class="icon-box">
+												<div class="icon">
+													&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+													<img src="https://www.cocoonpune.com/assets/img/icons/bed-room.svg" class="img-fluid" alt="Bed" loading="lazy" style="" data-original-title="" title="" aria-describedby="tooltip122743" />
+													<br />
+													<br />
+												</div>
+												<p>
+													&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Bed Room
+												</p>
+											</div>
+										</div>
+										<div class="col-6 o_colored_level">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="https://www.cocoonpune.com/assets/img/icons/balcony.svg" class="img-fluid" alt="Balcony" loading="lazy" style="" />
+													<br />
+													<br />
+												</div>
+												<p>
+													Balcony
+												</p>
+											</div>
+										</div>
+									</div>
+									<p>
+										<br />
+									</p>
+									<div class="col-6 o_colored_level">
+											<div class="icon-box">
+												<p>
+													&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Price &amp;nbsp;&amp;nbsp; :20000 rs
+												</p>
+											</div>
+									</div>
+									<p>
+										<br />
+									</p>
+									<p style="text-align: left;">
+										&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+										<a href="/checkavailable" class="btn btn-primary mb-2" data-original-title="" title="" aria-describedby="tooltip290817" target="_blank">
+											Check Availability
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="s_text_block pt32 pb32 o_colored_level" data-snippet="s_text_block" data-name="Text">
+						<div class="container s_allow_columns">
+							<p>
+								<br />
+							</p>
+							<p>
+								<br />
+							</p>
+						</div>
+					</section>
+					<section class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_text_image" data-name="Text - Image">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="o_colored_level pb16 pt16 col-lg-6">
+									<h3 class="detail-promo-item__title push-v--desktop--x-small push-v--mobile--x-medium push-v--tablet--small" style="text-align: left;">
+										<b>
+											&amp;nbsp;
+										</b>
+									</h3>
+									<h3 class="detail-promo-item__title push-v--desktop--x-small push-v--mobile--x-medium push-v--tablet--small" style="text-align: left;">
+										<b>
+											<br />
+										</b>
+										Royal Silk Suite
+									</h3>
+									<h3 class="detail-promo-item__title push-v--desktop--x-small push-v--mobile--x-medium push-v--tablet--small" style="text-align: left;">
+										<br />
+									</h3>
+									<p>
+										Room with a Living Area, Bed Room and Balcony, 
+									</p>
+									<p>
+										Microwav Oven,Bathrobe,  Fully Equipped Kitchenette 
+									</p>
+									<p>
+										<br />
+									</p>
+									<div class="row">
+										<div class="col-6 o_colored_level">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="https://www.cocoonpune.com/assets/img/icons/area.svg" class="img-fluid" alt="Area" loading="lazy" style="" />
+													<br />
+													<br />
+												</div>
+												<p>
+													1050 sqft Room
+												</p>
+												<p>
+													<br />
+												</p>
+											</div>
+										</div>
+										<div class="col-6 o_colored_level">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="https://www.cocoonpune.com/assets/img/icons/living-area-with-tv.png" class="img-fluid" alt="Living Area" loading="lazy" style="" data-original-title="" title="" aria-describedby="tooltip23678" />
+													<br />
+													<br />
+												</div>
+												<p>
+													Living Area with TV
+												</p>
+											</div>
+										</div>
+										<div class="col-6 o_colored_level pb0 pt0">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="https://www.cocoonpune.com/assets/img/icons/bed-room.svg" class="img-fluid" alt="Bed" loading="lazy" style="" />
+													<br />
+													<br />
+												</div>
+												<p>
+													2 Bed Room
+												</p>
+											</div>
+										</div>
+										<div class="col-6 o_colored_level">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="https://www.cocoonpune.com/assets/img/icons/balcony.svg" class="img-fluid" alt="Balcony" loading="lazy" style="" />
+													<br />
+													<br />
+												</div>
+												<p>
+													Balcony
+												</p>
+												<p>
+													<br />
+												</p>
+											</div>
+										</div>
+										<div class="col-6 o_colored_level pb0 pt0">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="https://www.cocoonpune.com/assets/img/icons/kitchenette.svg" class="img-fluid" alt="Kitchenette" loading="lazy" style="" />
+													<br />
+													<br />
+												</div>
+												<p>
+													Fully Equipped
+												</p>
+												<p>
+													Kitchenette
+												</p>
+												<p>
+													<br />
+												</p>
+											</div>
+										</div>
+										<div class="col-6 o_colored_level">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="https://www.cocoonpune.com/assets/img/icons/top-floor-icon.svg" class="img-fluid" alt="Floor" loading="lazy" style="" />
+													<br />
+													<br />
+												</div>
+												<p>
+													Top Floor
+												</p>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="col-6 o_colored_level">
+											<div class="icon-box">
+												<p>
+												 Price &amp;nbsp;&amp;nbsp; :20000 rs
+												</p>
+											</div>
+									</div>
+
+									<p>
+										<br />
+									</p>
+
+									<h3 class="detail-promo-item__title push-v--desktop--x-small push-v--mobile--x-medium push-v--tablet--small" style="text-align: left;">
+										&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+										<a href="/checkavailable" class="btn btn-primary mb-2" data-original-title="" title="" aria-describedby="tooltip941126">
+											Check Availability
+										</a>
+									</h3>
+								</div>
+								<div class="col-lg-6 pt16 pb16 o_colored_level" style="">
+									<img src="/hotel_management/static/img/bed7.png" class="img img-fluid float-left" alt="" loading="lazy" style="transform: translateX(8.5%) translateY(-5.6%) scaleX(1.45) scaleY(2.28);" data-original-title="" title="" aria-describedby="tooltip138476" data-original-id="497" data-original-src="/hotel_management/static/img/bed7.png" data-mimetype="image/png" data-resize-width="690" />
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="s_text_block pt32 pb32 o_colored_level" data-snippet="s_text_block" data-name="Text">
+						<div class="container s_allow_columns">
+							<p>
+								&amp;nbsp;
+							</p>
+						</div>
+					</section>
+					<section class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_image_text" data-name="Image - Text">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-6 pt16 pb16 o_colored_level">
+									<img src="/hotel_management/static/img/bed8.jpg" class="img img-fluid mx-auto" alt="" loading="lazy" style="transform: translateX(-9.6%) translateY(-4.1%) scaleX(1.28) scaleY(2.1); animation-play-state: paused; transition: none 0s ease 0s;" data-original-title="" title="" aria-describedby="tooltip939849" data-original-id="498" data-original-src="/hotel_management/static/img/bed8.jpg" data-mimetype="image/jpeg" data-resize-width="690" data-quality="100" />
+								</div>
+								<div class="col-lg-6 pt16 pb16 o_colored_level">
+									<div class="detail-promo-item__title-container detail-promo-item__trigger-1">
+										<h2 class="title" data-scroll="" data-scroll-direction="horizontal" data-scroll-speed=".3">
+											&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Silk Suite
+										</h2>
+										<p>
+											&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Rooms on the Top Most Floor, Room with a Living Area, Bed &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Room and Balcony, Separate TV in Living Room available.
+										</p>
+										<p>
+											<br />
+										</p>
+										<div class="py-2" />
+										<div class="row">
+											<div class="col-6 o_colored_level">
+												<div class="icon-box">
+													<div class="icon">
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+														<img src="https://www.cocoonpune.com/assets/img/icons/area.svg" class="img-fluid" alt="Area" loading="lazy" style="" data-original-title="" title="" aria-describedby="tooltip974798" />
+														<br />
+														<br />
+													</div>
+													<p>
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 525 sqft Room
+													</p>
+												</div>
+											</div>
+											<div class="col-6 o_colored_level">
+												<div class="icon-box">
+													<div class="icon">
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+														<img src="https://www.cocoonpune.com/assets/img/icons/living-area-with-tv.png" class="img-fluid" alt="Living" loading="lazy" style="" data-original-title="" title="" aria-describedby="tooltip631463" />
+														<br />
+														<br />
+													</div>
+													<p>
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Living Area with TV
+													</p>
+													<p>
+														<br />
+													</p>
+												</div>
+											</div>
+											<div class="col-6 o_colored_level">
+												<div class="icon-box">
+													<div class="icon">
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+														<img src="https://www.cocoonpune.com/assets/img/icons/bed-room.svg" class="img-fluid" alt="Bed" loading="lazy" style="" />
+														<br />
+														<br />
+													</div>
+													<p>
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Bed Room
+													</p>
+												</div>
+											</div>
+											<div class="col-6 o_colored_level">
+												<div class="icon-box">
+													<div class="icon">
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+														<img src="https://www.cocoonpune.com/assets/img/icons/balcony.svg" class="img-fluid" alt="Balcony" loading="lazy" style="" />
+														<br />
+														<br />
+													</div>
+													<p>
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Balcony
+													</p>
+												</div>
+											</div>
+											<div class="col-6 o_colored_level">
+												<div class="icon-box">
+													<div class="icon">
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+														<img src="https://www.cocoonpune.com/assets/img/icons/top-floor-icon.svg" class="img-fluid" alt="Floor" loading="lazy" style="" />
+														<br />
+														<br />
+													</div>
+													<p>
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Top Floor
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="detail-promo-item__body detail-promo-item__trigger-2 push-v--desktop--medium push-v--mobile--small rich-text-editor-output" style="text-align: left;">
+										<p>
+											&amp;nbsp;
+										</p>
+									</div>
+
+
+
+									<div class="col-6 o_colored_level">
+											<div class="icon-box">
+												<p>
+													&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Price &amp;nbsp;&amp;nbsp; :20000 rs
+												</p>
+											</div>
+									</div>
+
+
+									<div style="text-align: left;">
+										&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+										<a href="/checkavailable" class="btn btn-primary mb-2" data-original-title="" title="" aria-describedby="tooltip473226">
+											Check Availability
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="s_text_block pt32 pb32 o_colored_level" data-snippet="s_text_block" data-name="Text">
+						<div class="container s_allow_columns">
+							<p>
+								<br />
+							</p>
+							<p>
+								<br />
+							</p>
+							<p>
+								<br />
+							</p>
+						</div>
+					</section>
+					<section class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_text_image" data-name="Text - Image">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-6 pt16 pb16 o_colored_level">
+									<h2>
+										<br />
+									</h2>
+									<h2>
+										<br />
+									</h2>
+									<div class="detail-promo-item__title-container detail-promo-item__trigger-1">
+										<h3 class="detail-promo-item__title push-v--mobile--x-medium push-v--tablet--small push-v--desktop--x-small">
+											LAKE VIEW DELUXE ROOMS
+										</h3>
+										<p class="detail-promo-item__validity push-v--mobile--small push-v--desktop--large" />
+									</div>
+									<div class="rich-text-editor-output detail-promo-item__body detail-promo-item__trigger-2 push-v--mobile--small push-v--desktop--medium">
+										Discover the attention to detail in our Lake View Deluxe Rooms with incredible views over Lough Corrib.
+										<br />
+										<br />
+									</div>
+									<ul class="detail-promo-item__features">
+										<li class="detail-promo-item__feature-row detail-promo-item__trigger-2">
+											Antique furniture
+										</li>
+										<li class="detail-promo-item__feature-row detail-promo-item__trigger-2">
+											Custom designed carpets
+										</li>
+									</ul>
+									<p>
+										<br />
+									</p>
+									<div class="row">
+										<div class="col-6 o_colored_level">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="https://www.cocoonpune.com/assets/img/icons/area.svg" class="img-fluid" alt="Area" loading="lazy" style="" />
+													<br />
+													<br />
+												</div>
+												<p>
+													1050 sqft Room
+												</p>
+											</div>
+										</div>
+										<div class="col-6 o_colored_level">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="https://www.cocoonpune.com/assets/img/icons/living-area-with-tv.png" class="img-fluid" alt="Living Area" loading="lazy" style="" />
+													<br />
+													<br />
+												</div>
+												<p>
+													Living Area with TV
+												</p>
+												<p>
+													<br />
+												</p>
+											</div>
+										</div>
+										<div class="col-6 o_colored_level">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="https://www.cocoonpune.com/assets/img/icons/bed-room.svg" class="img-fluid" alt="Bed" loading="lazy" style="" />
+													<br />
+													<br />
+												</div>
+												<p>
+													2 Bed Room
+												</p>
+											</div>
+										</div>
+										<div class="col-6 o_colored_level">
+											<div class="icon-box">
+												<div class="icon">
+													<img src="https://www.cocoonpune.com/assets/img/icons/balcony.svg" class="img-fluid" alt="Balcony" loading="lazy" style="" />
+													<br />
+													<br />
+												</div>
+												<p>
+													Balcony
+												</p>
+												<p>
+													<br />
+												</p>
+											</div>
+											&amp;nbsp;
+										</div>
+									</div>
+									<p />
+									<p>
+
+
+
+									<div class="col-6 o_colored_level">
+											<div class="icon-box">
+												<p>
+												 Price &amp;nbsp;&amp;nbsp; :20000 rs
+												</p>
+											</div>
+									</div>
+
+
+
+
+										&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+										<a href="/checkavailable" class="btn btn-primary mb-2" data-original-title="" title="" aria-describedby="tooltip637070">
+											Check Availability
+										</a>
+									</p>
+								</div>
+								<div class="col-lg-6 pt16 pb16 o_colored_level">
+									<img src="/hotel_management/static/img/bed5.png" class="img img-fluid mx-auto" alt="" loading="lazy" style="transform: translateX(10.9%) translateY(7.5%) scaleX(1.31) scaleY(1.99);" data-original-id="486" data-original-src="/hotel_management/static/img/bed5.png" data-mimetype="image/png" data-resize-width="690" data-original-title="" title="" aria-describedby="tooltip400729" />
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="s_text_block pt32 pb32 o_colored_level" data-snippet="s_text_block" data-name="Text">
+						<div class="container s_allow_columns">
+							<p>
+								<br />
+							</p>
+							<p>
+								<br />
+								<br />
+								<br />
+							</p>
+							<p>
+								<br />
+							</p>
+						</div>
+					</section>
+					<section class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_image_text" data-name="Image - Text">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-6 pt16 pb16 o_colored_level">
+									<img src="/hotel_management/static/img/bed6.png" class="img img-fluid mx-auto" alt="" loading="lazy" style="transform: translateX(-9.8%) translateY(-12.5%) scaleX(1.31) scaleY(1.97); animation-play-state: paused; transition: none 0s ease 0s;" data-original-id="492" data-original-src="/hotel_management/static/img  vcxvbnnbvcxzzxcvbb/bed6.png" data-mimetype="image/png" data-resize-width="690" data-original-title="" title="" aria-describedby="tooltip416421" />
+								</div>
+								<div class="col-lg-6 o_colored_level pb16 pt0">
+									<div class="detail-promo-item__title-container detail-promo-item__trigger-1">
+										<h3 class="detail-promo-item__title push-v--desktop--x-small push-v--mobile--x-medium push-v--tablet--small">
+											&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;DELUXE QUEEN FAMILY ROOMS
+										</h3>
+										<h3 class="detail-promo-item__title push-v--desktop--x-small push-v--mobile--x-medium push-v--tablet--small">
+											&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+											<font style="font-size: 18px;">
+												For those seeking more spacious accommodations, Deluxe
+											</font>
+											&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+											<font style="font-size: 18px;">
+												Queen Family deliver living space with double
+											</font>
+											&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+											<font style="font-size: 18px;">
+												&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Queen beds.&amp;nbsp;
+											</font>
+										</h3>
+										<h3 class="detail-promo-item__title push-v--desktop--x-small push-v--mobile--x-medium push-v--tablet--small">
+											<font style="font-size: 18px;">
+												<br />
+											</font>
+										</h3>
+										<div class="row">
+											<div class="col-6 o_colored_level">
+												<div class="icon-box">
+													<div class="icon">
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+														<img src="https://www.cocoonpune.com/assets/img/icons/area.svg" class="img-fluid" alt="Area" loading="lazy" style="" />
+														<br />
+														<br />
+													</div>
+													<p>
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;525 sqft Room
+													</p>
+												</div>
+											</div>
+											<div class="col-6 o_colored_level">
+												<div class="icon-box">
+													<div class="icon">
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+														<img src="https://www.cocoonpune.com/assets/img/icons/living-area-with-tv.png" class="img-fluid" alt="Living" data-original-title="" title="" aria-describedby="tooltip721342" loading="lazy" style="" />
+														<br />
+														<br />
+													</div>
+													<p>
+														&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Living Area with TV
+													</p>
+													<p>
+														<br />
+													</p>
+												</div>
+											</div>
+											<div class="col-6 o_colored_level">
+												<div class="icon-box">
+													<div class="icon">
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+														<img src="https://www.cocoonpune.com/assets/img/icons/bed-room.svg" class="img-fluid" alt="Bed" loading="lazy" style="" />
+														<br />
+														<br />
+													</div>
+													<p>
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Bed Room
+													</p>
+												</div>
+											</div>
+											<div class="col-6 o_colored_level">
+												<div class="icon-box">
+													<div class="icon">
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+														<img src="https://www.cocoonpune.com/assets/img/icons/balcony.svg" class="img-fluid" alt="Balcony" data-original-title="" title="" aria-describedby="tooltip69840" loading="lazy" style="" />
+														<br />
+														<br />
+													</div>
+													<p>
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Balcony
+													</p>
+												</div>
+											</div>
+											<div class="col-6 o_colored_level">
+												<div class="icon-box">
+													<div class="icon">
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+														<img src="https://www.cocoonpune.com/assets/img/icons/top-floor-icon.svg" class="img-fluid" alt="Floor" data-original-title="" title="" aria-describedby="tooltip554567" loading="lazy" style="" />
+														<br />
+														<br />
+													</div>
+													<p>
+														&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Top Floor
+													</p>
+													<p>
+														<br />
+													</p>
+												</div>
+											</div>
+										</div>
+										<h3 class="detail-promo-item__title push-v--desktop--x-small push-v--mobile--x-medium push-v--tablet--small" />
+										<h3 class="detail-promo-item__title push-v--desktop--x-small push-v--mobile--x-medium push-v--tablet--small">
+										</h3>
+									</div>
+
+
+
+
+									<div class="col-6 o_colored_level">
+											<div class="icon-box">
+												<p>
+													&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Price &amp;nbsp;&amp;nbsp; :20000 rs
+												</p>
+											</div>
+									</div>
+
+
+
+
+									&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+									<a href="/booking" class="btn btn-primary mb-2" data-original-title="" title="" aria-describedby="tooltip221056">
+										Check Availability
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="s_text_block pt32 pb32 o_colored_level" data-snippet="s_text_block" data-name="Text">
+						<div class="container s_allow_columns">
+							<p>
+								<br />
+							</p>
+						</div>
+					</section>
+					<section class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_text_image" data-name="Text - Image">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-lg-6 pt16 pb16 o_colored_level">
+									<h2>
+										<br />
+									</h2>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</t>
+		</t>
+	</template>
+</odoo>

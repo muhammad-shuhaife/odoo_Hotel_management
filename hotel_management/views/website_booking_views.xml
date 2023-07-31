@@ -1,0 +1,219 @@
+<!-- <t t-name="website.book">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="s_image_gallery s_image_gallery_show_indicators s_image_gallery_indicators_rounded o_colored_level o_slideshow oe_img_bg pb32 pt32" data-vcss="001" data-columns="3" style="overflow: hidden; height: 678px; background-image: url(&quot;/web/image/588-323a636a/wall.png&quot;);" data-snippet="s_image_gallery" data-name="Image Gallery" data-original-id="587" data-original-src="/web/image/587-2426644b/wall.png" data-mimetype="image/png" data-resize-width="500">
+        <div class="container">
+          <div id="slideshow_1686199551261" class="carousel slide" data-ride="carousel" data-interval="0" style="margin: 0 12px;">
+            <div class="carousel-inner" style="padding: 0;">
+              <div class="carousel-item active" style="">
+                <img class="img img-fluid d-block" src="/web/image/583-7f1f4eff/bed1_sc2.jpg" style="transform: scaleX(1.33) scaleY(1.23);" alt="" data-name="Image" data-index="0" data-original-id="583" data-original-src="/web/image/583-7f1f4eff/bed1_sc2.jpg" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip32541" loading="lazy"/>
+              </div>
+              <div class="carousel-item undefined" style="">
+                <img class="img img-fluid d-block" src="/web/image/582-fae2e1e8/bed1_sc1.jpg" style="transform: scaleX(1.25) scaleY(1.22);" alt="" data-name="Image" data-index="1" loading="lazy" data-original-id="582" data-original-src="/web/image/582-fae2e1e8/bed1_sc1.jpg" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip563047"/>
+              </div>
+              <div class="carousel-item undefined" style="">
+                <img class="img img-fluid d-block" src="/web/image/584-06cb50c2/bed1_sc3.jpg" style="transform: scaleX(1.25) scaleY(1.28);" alt="" data-name="Image" data-index="2" loading="lazy" data-original-id="584" data-original-src="/web/image/584-06cb50c2/bed1_sc3.jpg" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip424006"/>
+              </div>
+              <div class="carousel-item undefined" style="">
+                <img class="img img-fluid d-block" src="/web/image/585-5c0ae241/bed1_sc4.jpg" style="transform: scaleX(1.3) scaleY(1.25);" alt="" data-name="Image" data-index="3" loading="lazy" data-original-id="585" data-original-src="/web/image/585-5c0ae241/bed1_sc4.jpg" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip919735"/>
+              </div>
+            </div>
+            <ul class="carousel-indicators">
+              <li data-target="#slideshow_1686199551261" data-slide-to="0" style="background-image: url(/web/image/583-7f1f4eff/bed1_sc2.jpg)" class="active"/>
+              <li data-target="#slideshow_1686199551261" data-slide-to="1" style="background-image: url(/web/image/582-fae2e1e8/bed1_sc1.jpg)"/>
+              <li data-target="#slideshow_1686199551261" data-slide-to="2" style="background-image: url(/web/image/584-06cb50c2/bed1_sc3.jpg)"/>
+              <li data-target="#slideshow_1686199551261" data-slide-to="3" style="background-image: url(/web/image/585-5c0ae241/bed1_sc4.jpg)"/>
+            </ul>
+            <a class="carousel-control-prev o_we_no_overlay" href="#slideshow_1686199551261" data-slide="prev" aria-label="Previous" title="Previous">
+              <span class="fa fa-chevron-left fa-2x text-white"/>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next o_we_no_overlay" href="#slideshow_1686199551261" data-slide="next" aria-label="Next" title="Next">
+              <span class="fa fa-chevron-right fa-2x text-white"/>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <ol/>
+      <ol/>
+      <ol/>
+      <ol/>
+      <ul/>
+      <ul/>
+      <ol/>
+      <section class="s_website_form pb16 o_colored_level oe_img_bg pt16" data-vcss="001" data-snippet="s_website_form" data-name="Form" style="background-image: url(&quot;/web/image/601-323a636a/wall.png&quot;);" data-original-id="600" data-original-src="/web/image/600-2426644b/wall.png" data-mimetype="image/png" data-resize-width="500">
+        <div class="container-fluid">
+          <form action="/website_form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark=":" data-success-mode="redirect" data-success-page="/contactus-thank-you" data-model_name="mail.mail">
+            <div class="s_website_form_rows row s_col_no_bgcolor">
+              <div class="form-group s_website_form_field col-12 s_website_form_custom s_website_form_required offset-lg-1 col-lg-6" data-type="char" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                  <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="o7zulpqvoeg9">
+                    <span class="s_website_form_label_content"> Name</span>
+                    <span class="s_website_form_mark"> :</span>
+                  </label>
+                  <div class="col-sm">
+                    <input type="text" class="form-control s_website_form_input" name=" Name" required="1" id="o7zulpqvoeg9"/>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group s_website_form_field col-12 s_website_form_custom offset-lg-1 col-lg-6" data-type="tel" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                  <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="o240r4ity5o9">
+                    <span class="s_website_form_label_content">Phone Number</span>
+                  </label>
+                  <div class="col-sm">
+                    <input type="tel" class="form-control s_website_form_input" name="Phone Number" id="o240r4ity5o9"/>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group s_website_form_field col-12 s_website_form_model_required offset-lg-1 col-lg-6" data-type="email" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                  <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="o6c42c14xf3q">
+                    <span class="s_website_form_label_content">Email ID</span>
+                    <span class="s_website_form_mark"> :</span>
+                  </label>
+                  <div class="col-sm">
+                    <input type="email" class="form-control s_website_form_input" name="email_from" required="true" id="o6c42c14xf3q"/>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group s_website_form_field col-12 s_website_form_model_required col-lg-6 offset-lg-1" data-type="char" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                  <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="oiy6amde59ef">
+                    <span class="s_website_form_label_content">Age</span>
+                    <span class="s_website_form_mark"> :</span>
+                  </label>
+                  <div class="col-sm">
+                    <input type="text" class="form-control s_website_form_input" name="subject" required="true" id="oiy6amde59ef"/>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group s_website_form_field col-12 s_website_form_custom s_website_form_required col-lg-6 offset-lg-1" data-type="text" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                  <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="ont98k1cv6x9">
+                    <span class="s_website_form_label_content">Address</span>
+                    <span class="s_website_form_mark"> :</span>
+                  </label>
+                  <div class="col-sm">
+                    <textarea class="form-control s_website_form_input" name="Address" required="1" id="ont98k1cv6x9" rows="3"/>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group s_website_form_field col-12 s_website_form_custom col-lg-6 offset-lg-1" data-type="many2one" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                  <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="obyf91h2cgcq">
+                    <span class="s_website_form_label_content">No.Person</span>
+                  </label>
+                  <div class="col-sm">
+                    <select class="form-control s_website_form_input" name="No.Person" id="obyf91h2cgcq" style="">
+                      <option value="1 person">1 person</option>
+                      <option value="2 person">2 person</option>
+                      <option value="2 person with child">2 person with child</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group s_website_form_field col-12 s_website_form_custom col-lg-6 offset-lg-1" data-type="char" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                  <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="oe9hxr8kbwjg">
+                    <span class="s_website_form_label_content">Book_id</span>
+                  </label>
+                  <div class="col-sm">
+                    <input type="text" class="form-control s_website_form_input" name="Book_id" id="oe9hxr8kbwjg"/>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group s_website_form_field col-12 s_website_form_custom col-lg-6 offset-lg-1" data-type="char" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                  <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="obuxykg70heb">
+                    <span class="s_website_form_label_content">Cust_id</span>
+                  </label>
+                  <div class="col-sm">
+                    <input type="text" class="form-control s_website_form_input" name="Cust_id" placeholder="" id="obuxykg70heb"/>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group s_website_form_field col-12 s_website_form_custom col-lg-6 offset-lg-1" data-type="char" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                  <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="ogrppb7slfmi">
+                    <span class="s_website_form_label_content">Room_id</span>
+                  </label>
+                  <div class="col-sm">
+                    <input type="text" class="form-control s_website_form_input" name="Room_id" id="ogrppb7slfmi"/>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group s_website_form_field col-12    s_website_form_dnone" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                  <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px">
+                    <span class="s_website_form_label_content"/>
+                    <span title="Separate email addresses with a comma.">
+                      <i class="fa fa-info-circle"/>
+                    </span>
+                  </label>
+                  <div class="col-sm">
+                    <input type="hidden" class="form-control s_website_form_input" name="email_to" value="info@yourcompany.example.com"/>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-12 s_website_form_submit" data-name="Submit Button"><div style="width: 200px;" class="s_website_form_label"/><br/>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<a href="#" role="button" class="btn btn-lg btn-primary s_website_form_send" data-original-title="" title="" aria-describedby="tooltip699996">Submit</a>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                <span id="s_website_form_result"/></div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="s_showcase pt48 pb48 o_colored_level" data-vcss="002" data-snippet="s_showcase" data-name="Showcase" style="">
+        <div class="container">
+          <div class="row no-gutters s_col_no_resize s_col_no_bgcolor s_nb_column_fixed">
+            <div class="col-lg text-lg-right">
+              <div class="row">
+                <div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+                  <div class="s_showcase_title d-flex flex-lg-row-reverse mb-2">
+                    <i class="s_showcase_icon fa fa-2x fa-desktop text-secondary mr-3 mr-lg-0 ml-lg-3"/>
+                    <h3>Television<br/></h3>
+                  </div>
+                </div>
+                <div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+                  <div class="s_showcase_title d-flex flex-lg-row-reverse mb-2">
+                    <i class="s_showcase_icon fa fa-2x text-secondary mr-3 mr-lg-0 ml-lg-3 fa-lock" data-original-title="" title="" aria-describedby="tooltip808780"/>
+                    <h3>High Secure <br/></h3>
+                  </div>
+                  <p>
+                    <br/>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="w-50 h-100 border-right"/>
+            </div>
+            <div class="col-lg">
+              <div class="row">
+                <div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+                  <div class="s_showcase_title d-flex mb-2">
+                    <i class="s_showcase_icon fa fa-2x fa-heart text-secondary mr-3"/>
+                    <h3>24 Hour Support<br/></h3>
+                    <div class="s_hr text-left pt32 pb32" data-snippet="s_hr" data-name="Separator">
+                      <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid;"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 pt24 pb24 o_colored_level" data-name="Block">
+                  <div class="s_showcase_title d-flex mb-2">
+                    <i class="s_showcase_icon fa fa-2x text-secondary mr-3 fa-feed" data-original-title="" title="" aria-describedby="tooltip861888"/>
+                    <h3>Wifi</h3>
+                  </div>
+                  <p>&amp;nbsp;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container text-lg-center">
+          <br/>
+        </div>
+      </section>
+    </div>
+  </t>
+</t> -->

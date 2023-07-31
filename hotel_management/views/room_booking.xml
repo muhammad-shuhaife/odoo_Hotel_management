@@ -1,0 +1,233 @@
+<odoo>
+    <data>
+
+<!-- START of Action ==================================================================================================================== -->
+
+        <record id="hotel_management.room_booking_action" model="ir.actions.act_window">
+            <field name="name">Room Booking</field>
+
+            <field name="res_model">hotel_management.room_b</field>
+            <field name="view_mode">tree,kanban,calendar,pivot,graph,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a Room
+                </p>
+            </field>
+        </record>
+
+<!-- END of Action ==================================================================================================================== -->
+  
+<!-- START Tree View ==================================================================================================================== -->
+
+        <record id='room_booking_tree' model='ir.ui.view'>
+            <field name='name'>hotel_managemnt.room_boms.tree</field>
+            <field name='name'>hotel_management.room_b.tree</field>
+            <field name='model'>hotel_management.room_b</field>
+            <field name="arch" type='xml'>
+                <tree string="Room Booking">
+                    <field name='booked_date' />
+                    <field name='check_in' />
+                    <field name='check_out' />
+                    <field name='room_type_id' />
+                    <field name='amenities_name' />
+                    <field name='room_no' />
+                    <field name="no_beds" />
+                    <field name='price' />
+                    <field name='payment_type' />
+                    <field name='payment' />
+                    <field name="balance"/> 
+                </tree>
+            </field>
+        </record>
+
+<!-- END of Tree View ==================================================================================================================== -->
+
+<!-- START Calender View ==================================================================================================================== -->
+
+        <record id="room_booking_calender" model='ir.ui.view'>
+            <field name="name">hotel_management.room_b.calender</field>
+            <field name="model">hotel_management.room_b</field>
+            <field name="arch" type="xml">
+                <calendar string="Room Booking" date_start="booked_date">
+                    <field name='booked_date' />
+                    <field name='check_in' />
+                     <field name='check_out' />
+                    <field name='room_type_id' />
+                    <field name='amenities_ids' />
+                    <field name="availability" />
+                    <field name='room_no' />
+                    <field name='price' />
+                    <field name='payment' />
+                    <field name='payment_type' />
+                </calendar>
+            </field>
+        </record>
+
+<!-- END Calender View ==================================================================================================================== -->
+
+<!-- START Graph View ==================================================================================================================== -->
+
+        <record id="room_booking_graph" model="ir.ui.view">
+            <field name="name">hotel_management.room_b.graph</field>
+            <field name="model">hotel_management.room_b</field>
+            <field name="arch" type="xml">
+                <graph string="Room Booking">
+                    <field name='room_type_id' type="measure" />
+                    <field name="check_in" type="pie" />
+                    <field name='booked_date' />
+
+                </graph>
+            </field>
+        </record>
+
+<!-- END Graph View ==================================================================================================================== -->
+
+<!-- START Kanban View ==================================================================================================================== -->
+
+        <record id="room_booking_kanban" model="ir.ui.view">
+            <field name="name">hotel_management.room_b.kanban</field>
+            <field name="model">hotel_management.room_b</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <field name="booked_date" />
+
+
+
+                    <field name='check_in' />
+                     <field name='check_out' />
+                    <field name='room_type_id' />
+                    <field name='amenities_ids' />
+                    <field name="availability" />
+                    <field name='room_no' />
+                    <field name='price' />
+                    <field name='payment' />
+                    <field name='payment_type' />
+
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="oe_kanban_global_click bg-info">
+                                <div class="oe_kanban_details">
+                                    <ul style="color:black">
+                                        <li>
+                                            <strong><b>Booked Date</b> : <field name="booked_date" /></strong>
+                                        </li>
+                                        <li>
+                                            <strong><b>Check in</b> : <field name="check_in" /></strong>
+                                        </li>
+                                         <li>
+                                            <strong><b>Check out</b> : <field name="check_out" /></strong>
+                                        </li>
+                                        <li>
+                                            <strong><b>Room Type</b> : <field name="room_type_id" /></strong>
+                                        </li>
+                                        <li>
+                                            <strong><b>Room No</b> : <field name="room_no" /></strong>
+                                        </li>
+                                        <li>
+                                            <strong><b>Availiability</b> : <field
+                                                    name="availability" /></strong>
+                                        </li>
+                                        <li>
+                                            <strong><b>Amenities</b> : <field name="amenities_ids" /></strong>
+                                        </li>
+                                        <li>
+                                            <strong><b>Price</b> : <field name="price" /></strong>
+                                        </li>
+                                        <li>
+                                            <strong><b>Payment Type</b> : <field name="payment_type" /></strong>
+                                        </li>
+
+                                        <li>
+                                            <strong><b>Payment Amount</b> : <field name="payment" /></strong>
+                                        </li>
+                                    
+                                    </ul>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+<!-- END Kanban View ==================================================================================================================== -->
+
+<!-- START Pivot View ==================================================================================================================== -->
+
+        <record id="room_booking_pivot" model="ir.ui.view">
+            <field name="name">hotel_management.room_b.pivot</field>
+            <field name="model">hotel_management.room_b</field>
+            <field name="arch" type="xml">
+                <pivot string="Room Booking">
+
+                    <field name="room_type_id" type="row" />
+                    <field name="check_in" type="col" interval="day" />
+
+
+                </pivot>
+
+            </field>
+        </record>
+
+<!-- END Pivot View ==================================================================================================================== -->
+
+<!-- START Form View ==================================================================================================================== -->
+
+
+        <record id="room_booking_form" model="ir.ui.view">
+            <field name="name">Room</field>
+            <field name="name">hotel_management.room_b.form</field>
+            <field name="model">hotel_management.room_b</field>
+            <field name="arch" type="xml">
+                <form string="Room">
+
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="booked_date" />
+                                <field name='check_in' />
+                                 <field name='check_out' />
+                                <field name="room_type_id" />
+                                <field name="no_beds" />
+                                <field name="room_no" />
+                                <field name="availability" />
+                            </group>
+                            <group>
+                                <field name="price" />
+                                <field name='payment_type' />
+                                <field name="payment" />
+                                <field name="balance"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="amenities_ids" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+<!-- END Form View ==================================================================================================================== -->
+
+<!-- START Search View ==================================================================================================================== -->
+
+        <record id='room_booking_search' model="ir.ui.view">
+            <field name="name">Room Booking</field>
+            <field name="model">hotel_management.room_b</field>
+            <field name="arch" type="xml">
+                <search string="Room">
+                    <field name="room_no" />
+                    <field name="check_in" />
+                    <field name="check_out" />
+                    <field name="availability" />
+                    <filter string="filter by today"
+                        domain="[('create_date', '&gt;', (context_today() - datetime.timedelta(days=1)).strftime('%Y-%m-%d'))]"
+                        name="today" />
+                </search>
+            </field>
+        </record>
+
+<!-- END Search View ==================================================================================================================== -->
+
+    </data>
+</odoo>

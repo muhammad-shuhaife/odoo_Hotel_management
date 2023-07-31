@@ -1,0 +1,61 @@
+<odoo>
+    <data>
+
+<!-- START of Action ==================================================================================================================== -->
+
+        <record id="hotel_management.room_management_action" model="ir.actions.act_window">
+            <field name="name">Room Management</field>
+            <field name="res_model">hotel_management.roomtype</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Room Type
+                </p>
+            </field>
+        </record>
+
+<!-- END of Action ==================================================================================================================== -->
+  
+<!-- START Tree View ==================================================================================================================== -->
+
+        <record id="room_m_tree" model="ir.ui.view">
+            <field name="name">RoomType</field>
+            <field name="model">hotel_management.roomtype</field>
+            <field name="arch" type="xml">
+                <tree string="Room Management">
+                    <field name="name" />
+                    <field name="room_no" />
+                     <field name="no_beds"/> 
+                    <field name="price" />
+                    <field name="guest" />
+                </tree>
+            </field>
+        </record>
+
+<!-- END of Tree View ==================================================================================================================== -->
+
+<!-- START Form View ==================================================================================================================== -->
+
+        <record id="room_m_form" model="ir.ui.view">
+            <field name="name">RoomType</field>
+            <field name="model">hotel_management.roomtype</field>
+            <field name="arch" type="xml">
+                <form string="Room Management">
+                    <sheet>
+                        <group>
+                            <field name="image" />
+                            <field name="name" />
+                            <field name="room_no" />
+                            <field name="no_beds"/>
+                            <field name="price" />
+                            <field name="guest" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+<!-- END Form View ==================================================================================================================== -->
+
+    </data>
+</odoo>

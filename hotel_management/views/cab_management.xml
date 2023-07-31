@@ -1,0 +1,184 @@
+<odoo>
+    <data>
+
+<!-- START of Action ==================================================================================================================== -->
+
+        <record id = "hotel_management.cab_management_action" model = "ir.actions.act_window">
+            <field name = "name"> Cab Management</field>
+            <field name = "res_model">hotel_management.cab_m</field>
+            <field name = "view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Add your 1st 'Cab Details'
+                </p>
+            </field>
+        </record>
+
+<!-- END of Action ==================================================================================================================== -->
+
+<!-- START Tree View ==================================================================================================================== -->
+
+        <record id = "cab_management_tree" model = "ir.ui.view">
+            <field name = "name">hotel_management.cab_m.tree</field>
+            <field name = "model">hotel_management.cab_m</field>
+            <field name = "arch" type = "xml">
+                <tree string = "Cab Management">
+                    <field name = "name"/>
+                    <field name = "cab_m_company_name"/>
+                    <field name = "cab_m_brand"/>
+                    <field name = "cab_m_capacity"/>
+                    <!-- <field name = "cab_availability"/> -->
+
+                    <field name = "cab_m_driver_name"/>
+                    <field name = "cab_m_driver_aadhaar_no"/>
+                    <field name = "cab_m_driver_contact_no"/>
+                    <field name = "cab_m_driver_address"/>
+                </tree>
+            </field>
+        </record>
+
+<!-- END of Tree View ==================================================================================================================== -->
+
+<!-- START Form View ==================================================================================================================== -->
+
+        <record id = "cab_management_form" model = "ir.ui.view">
+            <field name = "name">hotel_management.cab_m.form</field>
+            <field name = "model">hotel_management.cab_m</field>
+            <field name = "arch" type = "xml">
+                <form string = "Cab Management">
+                    <sheet>
+                        <group string = "Cab Details">
+                            <field name = "name" placeholder = "Cab's Number Plate"/>
+                            <field name = "cab_m_company_name" placeholder = "Enter 'Cab owned by which Company' OR 'Self Owned' (if cab is Self-Owned)"/>
+                            <field name = "cab_m_brand" placeholder = "Brand of the Cab"/>
+                            <field name = "cab_m_capacity" placeholder = "Capacity of the Cab"/>
+                            <!-- <field name = "cab_availability"/> -->
+                        </group>
+                        
+                        <group string = "Driver Details">
+                            <field name = "cab_m_driver_name" placeholder = "Cab's Driver Name"/>
+                            <field name = "cab_m_driver_aadhaar_no" placeholder = "Cab's Driver Aadhaar Number"/>
+                            <field name = "cab_m_driver_contact_no" placeholder = "Driver's Contact Number"/>
+                            <field name = "cab_m_driver_address" placeholder = "Driver's Address"/>
+                        </group>
+                    </sheet>
+                </form>    
+            </field>    
+        </record>
+
+<!-- END Form View ==================================================================================================================== -->
+
+<!-- START Search View ==================================================================================================================== -->
+
+        <record id = "cab_management_search" model = "ir.ui.view">
+            <field name = "name">hotel_management.cab_m.search</field>
+            <field name = "model">hotel_management.cab_m</field>
+            <field name = "arch" type = "xml">
+                <search string = "Cab Management">
+                    <field name = "name"/>
+                    <field name = "cab_m_company_name"/>
+                    <field name = "cab_m_brand"/>
+                    <field name = "cab_m_capacity"/>
+                    <!-- <field name = "cab_availability"/> -->
+
+                    <field name = "cab_m_driver_name"/>
+                    <field name = "cab_m_driver_aadhaar_no"/>
+                    <!-- <field name = "cab_m_driver_contact_no"/> -->
+                    <!-- <field name = "cab_m_driver_address"/> -->
+                </search>
+            </field>
+        </record>
+
+<!-- END Search View ==================================================================================================================== -->
+
+
+    </data>
+</odoo>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Below code is been replaced wit above code ============================================================================================================ -->
+
+<!-- <odoo>
+  <data>
+    <record id="cab_action" model="ir.actions.act_window">
+      <field name="name">Cab Facilities</field>
+      <field name="res_model">hotel_management.cab</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+          Create Cab
+        </p>
+      </field>
+    </record>
+    <record id="hotel_cab_tree" model="ir.ui.view">
+      <field name="name">hotel_management.cab.tree</field>
+      <field name="model">hotel_management.cab</field>
+      <field name="arch" type="xml">
+          <tree string="cab">
+              <field name="book_ids" />
+              <field name="cab_id" />
+              <field name="car_type" />
+              <field name="address1" />
+              <field name="location1" />
+              <field name="contact1" />
+              <field name="cust_id"   />
+              <field name="states" />
+          </tree>
+
+      </field>
+    </record>
+    <record id="hotel_cab_form" model="ir.ui.view">
+      <field name="name">hotel_management.cab.form</field>
+      <field name="model">hotel_management.cab</field>
+      <field name="arch" type="xml">
+          <form>
+              <header>
+						<button name="accept" string="Accept" type="object" attrs="{'invisible': [('states','=', 'Accept')]}" />
+						<button name="reject" string="Reject" type="object" attrs="{'invisible': [('states','=', 'Reject')]}" />
+						<field name="states" widget="statusbar" />
+              </header>
+              <sheet>
+                <group>
+                    <group>
+                        <field name="cab_id" />
+                        <field name="book_ids"/>
+                    </group>
+                    <group>
+                        <field name="car_type"   />
+                        <field name="location1"   />
+                    </group>
+                    <group >
+                         <field name="cust_id" option="{'no_create_edit':True,'no_create':True,'no_open':True}"  />
+                        <field name="address1"   />
+                        <field name="contact1" />
+                    </group>
+                </group>
+              </sheet>
+          </form>
+
+      </field>
+    </record>
+  </data>
+</odoo>
+ -->

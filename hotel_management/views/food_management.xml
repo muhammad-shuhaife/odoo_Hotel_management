@@ -1,0 +1,62 @@
+<odoo>
+    <data>
+
+<!-- START of Action ==================================================================================================================== -->
+
+        <record id="hotel_management.food_management_action" model="ir.actions.act_window">
+            <field name="name">Food Management</field>
+            <field name="res_model">hotel_management.food_m</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Fooditem
+                </p>
+            </field>
+        </record>
+
+<!-- END of Action ==================================================================================================================== -->
+  
+<!-- START Tree View ==================================================================================================================== -->
+
+        <record id="food_management_tree" model="ir.ui.view">
+            <field name="name">Food Management</field>
+            <field name="model">hotel_management.food_m</field>
+            <field name="arch" type="xml">
+                <tree string="Food Management">
+                    <field name="name" />
+                    <field name="category" />
+                    <field name="type1" />
+                    <field name="description" />
+                    <field name="price" />
+                </tree>
+            </field>
+        </record>
+
+<!-- END of Tree View ==================================================================================================================== -->
+
+<!-- START Form View ==================================================================================================================== -->
+
+        <record id="food_management_form" model="ir.ui.view">
+            <field name="name">Food Management</field>
+            <field name="model">hotel_management.food_m</field>
+            <field name="arch" type="xml">
+                <form string="Food Management">
+                    <sheet>
+                        <group>
+                            <field name="name" />
+                            <field name="category" />
+                            <field name="type1" />
+                            <field name="description" />
+                            <field name="price" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+<!-- END Form View ==================================================================================================================== -->
+
+    </data>
+</odoo>
+
+    

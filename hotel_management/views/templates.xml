@@ -1,0 +1,33 @@
+
+<!--<odoo>-->
+<!--    <data>-->
+<!--      <record id="menu_boo_website" model="website.menu">-->
+<!--            <field name="name">Book</field>-->
+<!--            <field name="url">/room_booking</field>-->
+<!--            <field name="parent_d" ref="website.main_menu"/>-->
+<!--            <field name="sequence">50</field>-->
+<!--      </record>-->
+<!--      <template id="booking_room" name="booking_room">-->
+<!--        <t t-call="website.layout">-->
+<!--          <p>hello </p>-->
+<!--          </t>-->
+<!--      </template>-->
+
+
+ <!-- <odoo>
+    <data> -->
+<!--          <record id="menu_boo_website" model="website.menu">-->
+<!--                <field name="name">Book</field>-->
+<!--                <field name="url">/room_booking</field>-->
+<!--                <field name="parent_d" ref="website.main_menu"/>-->
+<!--                <field name="sequence">50</field>-->
+<!--          </record>-->
+<!--          <template id="booking_room" name="booking_room">-->
+<!--            <t t-call="website.layout">-->
+<!--              <p>hello </p>-->
+<!--              </t>-->
+<!--          </template>-->
+
+
+<!--    </data>-->
+<!--</odoo>-->

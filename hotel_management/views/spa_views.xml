@@ -1,0 +1,73 @@
+<odoo>
+	<data>
+
+	<!-- action -->
+		<record id="spa_action" model="ir.actions.act_window">
+			<field name="name">Spa</field>
+			<field name="res_model">hotel_management.spa</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		
+		<!-- tree View -->
+		<record id="spa_tree" model="ir.ui.view">
+			<field name="name">hotel_management.spa.tree</field>
+			<field name="model">hotel_management.spa</field>
+			<field name="arch" type="xml">
+				<tree string="Spa">
+					<field name="name" />
+					<field name="price" />
+					<field name="date" />
+					<field name="schedule_time" />
+					<field name="price" />
+					
+				</tree>
+			</field>
+		</record>
+		<!-- form View -->
+		<record id="spa_form" model="ir.ui.view">
+			<field name="name">hotel_management.spa.form</field>
+			<field name="model">hotel_management.spa</field>
+			<field name="arch" type="xml">
+				<form string="Spa">
+					<sheet>
+						<group>
+							<group>
+								<field name="name" />
+								<field name="price" />
+								<field name="cust_id"/>
+							</group>
+							<group>
+								<field name="date" />
+								<field name="schedule_time" />
+								
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<!-- search view -->
+		<record id="spa_search" model="ir.ui.view">
+			<field name="name">hotel_management.spa.search</field>
+			<field name="model">hotel_management.spa</field>
+			<field name="arch" type="xml">
+				<search string="Spa">
+					<field name="name" />
+					<field name="date" />
+					<field name="price" />
+					<field name="schedule_time" />
+				
+				</search>
+			</field>
+		</record>
+
+		<!-- action -->
+		<record id="spa_action" model="ir.actions.act_window">
+			<field name="name">Spa</field>
+			<field name="res_model">hotel_management.spa</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+	</data>
+</odoo>

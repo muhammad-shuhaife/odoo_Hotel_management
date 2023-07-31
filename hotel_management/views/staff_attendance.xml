@@ -1,0 +1,69 @@
+<odoo>
+    <data>
+
+<!-- START of Action ==================================================================================================================== -->
+
+            <record id="staff_attendance_action" model="ir.actions.act_window">
+            <field name="name">Staff Attendance</field>
+            <field name="res_model">hotel_management.staff_attendance</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create Staff Attendance
+                </p>
+            </field>
+    </record>
+
+
+<!-- END of Action ==================================================================================================================== -->
+  
+<!-- START Tree View ==================================================================================================================== -->
+
+    <record id="hotel_staff_attendance_tree" model="ir.ui.view">
+      <field name="name">hotel_management.staff_attendance.tree</field>
+      <field name="model">hotel_management.staff_attendance</field>
+      <field name="arch" type="xml">
+        <tree string="staff_attendance">
+          <!-- <field name="staff_id" /> -->
+          <field name="name" />
+          <field name="staff_staff_job_title" />
+          <field name="staff_attendance_date" />
+          <field name="staff_attendance_in_time" readonly="1" />
+          <field name="staff_attendance_out_time" readonly="1" />
+          <field name="staff_attendance_total_hours_worked" />
+        </tree>
+      </field>
+    </record>
+
+<!-- END of Tree View ==================================================================================================================== -->
+
+<!-- START Form View ==================================================================================================================== -->
+
+    <record id="hotel_staff_attendance_form" model="ir.ui.view">
+      <field name="name">hotel_management.staff_attendance.form</field>
+      <field name="model">hotel_management.staff_attendance</field>
+      <field name="arch" type="xml">
+        <form string="staff_attendance">
+          <sheet>
+            <group>
+              <group>
+                <!-- <field name="staff_id" /> -->
+                <field name="name" />
+                <field name="staff_staff_job_title" />
+                <field name="staff_attendance_date" />
+              </group>
+              <group>
+                <field name="staff_attendance_in_time" readonly="1" />
+                <field name="staff_attendance_out_time" readonly="1" />
+                <field name="staff_attendance_total_hours_worked" />
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+<!-- END Form View ==================================================================================================================== -->
+
+  </data>
+</odoo>

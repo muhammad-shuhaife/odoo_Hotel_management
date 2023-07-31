@@ -1,0 +1,231 @@
+<odoo>
+	<record id="menu_home_website" model="website.menu">
+		<field name="name">Booking</field>
+		<field name="url">/checkavailable</field>
+		<field name="parent_id" ref="website.main_menu" />
+		<field name="sequence">6</field>
+	</record>
+	<template id="hotel_assets_frontend" name="Hotel_Patient_Frontend" inherit_id="web.assets_frontend">
+		<xpath expr="." position="inside">
+			<link rel="stylesheet" type="text/css" href="hotel_management/static/src/css/login.css" />
+		</xpath>
+	</template>
+	<template id="checkavailable_room" name="check available">
+		<t t-call="website.layout">
+			<div id="wrap" class="oe_structure oe_empty">
+				<section class="s_cover bg-black-50 o_colored_level s_parallax_no_overflow_hidden pt104 oe_img_bg pb80" data-scroll-background-ratio="0" data-snippet="s_cover" data-name="Cover" style="background-position: 0% 45.2366%; background-image: url(&quot;/hotel_management/static/img/hotel_beach.jpeg&quot;);" data-original-id="495" data-original-src="/hotel_management/static/img/hotel_beach.jpeg.jpeg" data-mimetype="image/png" data-resize-width="1125">
+					<div class="s_allow_columns container">
+						<h1 style="text-align: center;">
+							<font style="font-size: 62px; font-weight: bold;" class="text-o-color-3">
+								JW MARRIOTT
+							</font>
+						</h1>
+						<p>
+							<br />
+						</p>
+						<p class="lead" style="text-align: center;">
+							<font style="" class="text-black">
+								&amp;nbsp;
+							</font>
+							<font style="color: rgb(123, 57, 0);">
+								&amp;nbsp;
+							</font>
+							<font style="color: rgb(123, 57, 0);">
+							</font>
+							<b>
+								<i>
+									<font style="" class="text-o-color-3">
+										Discover modern elegance at JW Marriott Hotel in Kerala,India.
+									</font>
+								</i>
+							</b>
+						</p>
+						<p class="lead" style="text-align: center;">
+							<b>
+								<i>
+									<font style="" class="text-o-color-3">
+										Enjoy your stay to the fullest extent.
+									</font>
+									<font style="" class="text-o-color-3">
+									</font>
+								</i>
+							</b>
+						</p>
+						<h1 style="text-align: center;">
+						</h1>
+					</div>
+				</section>
+				<div style="margin-top:65px;">
+					<center>
+					<p><b>
+								Select The Perfect Date
+							</b></p>
+						<p>
+						
+								Your Dream  Stay Awaits: Explore Hotel Availability for a Memorable Stay.
+						</p>
+					</center>
+				</div>
+				<div id="wrap1">
+					<div class="oe_structure">
+						<div class="container2">
+							<form role="form" action="/listroom" method="POST">
+								<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+								<div class="image-header" style="vertical-align:top;display:flex;margin-bottom:50px;margin-top:25px">
+									<img class="image-top" src="/hotel_management/static/img/hotel_beach.jpeg" height="100px" width="30%" style="display:flex;margin-right:40px;border:4px solid white;box-shadow: 0px 0px 9px 2px rgb(156, 144, 144);" />
+									<img class="image-top" src="/hotel_management/static/img/hotel_sub.jpg" height="100px" width="30%" style="display:flex;margin-right:40px;border:4px solid white;box-shadow: 0px 0px 9px 2px rgb(156, 144, 144); " />
+									<img class="image-top" src="/hotel_management/static/img/hotel_urban.jpeg" height="100px" width="30%" style="display:flex;border:4px solid white;box-shadow: 0px 0px 9px 2px rgb(156, 144, 144); " />
+								</div>
+								<div class="form-group2">
+									<label for="date1" class="control-label">
+										Check In
+									</label>
+									<br />
+									<input type="date" name="check_in" t-att-value="check_in" id="check_in" placeholder="" required="required" />
+								</div>
+								<div class="form-group2">
+									<label for="date2" class="control-label">
+										Check Out
+									</label>
+									<br />
+									<input type="date" name="check_out" t-att-value="check_out" id="check_out" placeholder="" required="required" />
+								</div>
+								<div class="form-group2">
+									<!--
+									<label for="room_type_id" class="control-label">
+									Room Type
+									</label>
+									<select name="room_type_id" class="form-control link-style">
+									<t t-foreach="room_rec" t-as="room">
+									<option />
+									<option t-esc="room.name" t-att-value="room.id" />
+									</t>
+									</select>
+									-->
+									<label for="guest" class="control-label">
+										Guest
+									</label>
+									<br />
+									<input type="number" name="guest" t-att-value="guest" id="guest" placeholder="" required="required" />
+									<center>
+										<button type="submit" class="checknow-btn">
+											Check Now
+										</button>
+									</center>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<hr style=" height:0.04rem; width:100px border:none; background-color:rgb(207, 200, 200); margin-top:130px;">
+					<div style="margin-top:100px;">
+						<center>
+							<p>
+								<b>
+									For Getting More Information Please Contact us
+								</b>
+							</p>
+							<a href="/contactus" class="btn btn-primary" id="select-btn" style="box-shadow: 0px 0px 9px 2px rgb(207, 194, 194); border-color:gray;">
+								Contact Us
+							</a>
+						</center>
+					</div>
+				</hr>
+				<div class="s_popup o_snippet_invisible" data-vcss="001" data-snippet="s_popup" data-name="Popup" id="sPopup1686653792308" data-invisible="1">
+					<div class="modal fade s_popup_middle modal_shown" style="background-color: var(--black-50)  !important; display: none;" data-show-after="5000" data-display="afterDelay" data-consents-duration="7" data-focus="false" data-backdrop="false" tabindex="-1" role="dialog" aria-hidden="true">
+						<div class="modal-dialog d-flex">
+							<div class="modal-content oe_structure">
+								<div class="s_popup_close js_close_popup o_we_no_overlay o_not_editable" aria-label="Close">
+									×
+								</div>
+								<section class="s_banner pt96 pb96 oe_img_bg o_colored_level" data-snippet="s_banner" style="background-image: url(&quot;/hotel_management/static/img/dark_brown_wall.jpeg.s_popup_default_image&quot;);">
+									<div class="container">
+										<div class="row s_nb_column_fixed">
+											<div class="col-lg-10 offset-lg-1 text-center o_cc o_cc1 jumbotron pt48 pb48 o_colored_level">
+												<h2>
+													<font style="font-size: 62px;" class="o_default_snippet_text">
+														Win $20
+													</font>
+												</h2>
+												<p class="lead o_default_snippet_text">
+													Check out now and get $20 off your first order.
+												</p>
+												<a href="#" class="btn btn-primary mb-2 o_default_snippet_text">
+													New customer
+												</a>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="s_text_block o_colored_level pb0 pt0" data-snippet="s_text_block" data-name="Text">
+					<div class="container s_allow_columns">
+						<h3>
+							<b>
+								<font style="" class="text-o-color-2">
+									<br />
+								</font>
+							</b>
+						</h3>
+						<div class="container text-lg-center">
+							<p>
+								<br />
+							</p>
+						</div>
+						<section class="s_numbers pt24 pb24 o_colored_level undefined o_cc o_cc1" data-snippet="s_numbers" data-name="Numbers" style="">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-3 text-center pt24 pb24 o_colored_level shadow" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 5px 0px !important;">
+										<span class="s_number display-4 o_default_snippet_text">
+											12
+										</span>
+										<h6>
+											<font style="color: rgb(20, 127, 123);">
+												Useful options
+											</font>
+										</h6>
+									</div>
+									<div class="col-lg-3 text-center pt24 pb24 o_colored_level shadow" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 5px 0px inset !important;">
+										<span class="s_number display-4 o_default_snippet_text">
+											45
+										</span>
+										<h6>
+											<font style="color: rgb(20, 127, 123);">
+												Beautiful snippets
+											</font>
+										</h6>
+									</div>
+									<div class="col-lg-3 text-center pt24 pb24 o_colored_level shadow" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 5px 0px !important;">
+										<span class="s_number display-4">
+											10
+										</span>
+										<h6>
+											<font style="color: rgb(20, 127, 123);">
+												Amazing pages
+											</font>
+										</h6>
+									</div>
+									<div class="col-lg-3 text-center pt24 pb24 o_colored_level shadow" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 5px 0px inset !important;">
+										<span class="s_number display-4">
+											37
+										</span>
+										<h6>
+											<font style="color: rgb(20, 127, 123);">
+												Outstanding images
+											</font>
+										</h6>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</section>
+			</div>
+		</t>
+	</template>
+</odoo>
